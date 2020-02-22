@@ -1,0 +1,1268 @@
+/*--------------Universal code for all pages-------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/so-white.png) repeat;
+  Margin: 0%;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+ 
+}
+
+
+
+/*--------------Navigation for all websites-------------*/
+/*--------------CODE FROM https://codepen.io/mutedblues/pen/MmPNPG-------------*/
+.header {
+  border-bottom: rgba(49, 49, 49, 0.363) 1px solid;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top: 0px;
+  overflow: visible;
+  background-color: #ffffffb2;
+}
+
+.header ul {
+  margin-top: 12px;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+a {
+  color: #131313;
+  text-decoration: none;
+}
+
+.header .logo a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+
+.header li a:hover {
+  transform: rotate(-2.2deg) scale(1.02);
+}
+
+.header li a:hover:before,
+li a:hover:after {
+  opacity: 1;
+  width: 12.5px;
+}
+
+.header .mc a:before,
+.mc a:after {
+  transition: all 0.25s ease;
+  opacity: 0;
+  content: '';
+  border: 2px solid rgb(47, 248, 228);
+  display: block;
+  position: relative;
+  z-index: -1;
+  margin: auto;
+  width: 0px;
+}
+
+.header li a:before {
+  transform: rotate(120deg) translateY(-50%) translateX(-50%);
+}
+
+.header li a:after {
+  transform: rotate(-60deg) translateY(-50%) translateX(-50%);
+}
+
+/*-------Website Logo------*/
+.header .logo {
+  margin-top: 12px;
+  display: block;
+  float: left;
+  color: #E71D36;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: ease-in 0.2s;
+}
+
+.header .logo:hover {
+  color: rgb(47, 248, 228);
+
+}
+
+/*------------START OF HAMBRUGER MENU------------- */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/*-------start of the menu icon----------*/
+
+.header .menu-icon {
+  cursor: pointer;
+  position: relative;
+  padding: 20px 20px;
+  float: right;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: rgb(179, 27, 27);
+  display: inline-block;
+  height: 3px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 24px;
+
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: rgb(230, 4, 4);
+  content: '';
+  display: block;
+  height: 100%;
+  position: relative;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/*-------start of the menu button----------*/
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked~.menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+/*-------x----------------End of Navigation for all websites----------------------------x---*/
+
+
+
+
+/*--------------------Start of home page--------------------*/
+
+
+
+/*-------More about me button------*/
+/*--------CODE FROM https://codepen.io/lookingforsome/pen/oLJkoO-----*/
+.svg-wrapper {
+  margin-top: 98px;
+}
+
+.shape {
+  stroke-dasharray: 141 539;
+  stroke-dashoffset: -473.5;
+  stroke-width: 15px;
+  fill: transparent;
+  stroke: rgb(47, 248, 228);
+  transition: stroke-width 2s, stroke-dashoffset 2s, stroke-dasharray 2s;
+}
+
+.text {
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 8px;
+  color: rgb(219, 34, 34);
+  top: -48px;
+  position: relative;
+
+}
+
+/*--animation for button----*/
+.svg-wrapper:hover .shape {
+  stroke-width: 5px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+}
+/*----x---More about me button---x---*/
+
+
+
+/*-------------Start of main text------------- */
+.hero {
+  max-width: 1335px;
+  margin: 0 auto;
+  overflow: auto;
+  min-height: 100%;
+  padding: 14rem 0;
+
+  position: relative;
+}
+
+.hero-content {
+  position: relative;
+  top: 50%;
+  bottom: 50%;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 2px;
+
+}
+
+.red {
+  color: rgb(255, 0, 30);
+  text-transform: uppercase;
+  font-style: normal;
+
+}
+
+.red:hover {
+  color: rgb(47, 248, 228);
+  transition: ease-in-out 0.9s;
+}
+
+.ifrah1 {
+  color: rgb(19, 19, 19);
+  letter-spacing: 2px;
+}
+
+
+.hometext {
+  height: 50px;
+  text-align: center;
+  font-size: 32px;
+}
+
+/*--inspired by https://codepen.io/pugson/pen/EwmKJp----*/
+.text-highlight {
+  font-style: normal;
+  border-radius: 1em 0 1em 0;
+
+  background-image:
+    linear-gradient(-100deg,
+      rgba(150, 243, 255, 0.15),
+      rgba(150, 243, 255, 0.8) 100%,
+      rgba(150, 239, 255, 0.25));
+}
+
+/*--------x-----End of main text-----x-------- */
+
+
+/*---------------------RESPONSIVENESS/MEDIA QUERIES FOR HOME PAGE--------------------------*/
+
+/*-------------NAVIGATION------------- */
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+
+  .header li a {
+    padding: 20px 30px;
+  }
+
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+
+/*-------------HOME PAGE CONTENT------------- */
+
+@media only screen and (max-width: 375px) {
+  .Iam .innerIam {
+    float: left;
+    font-size: 30%;
+    margin-left: -40px;
+  }
+
+  .hometext {
+    font-size: 18px;
+    padding: 10px 10px 0 0;
+  }
+
+  .svg-wrapper {
+    margin-bottom: -100px;
+
+  }
+
+  .hero {
+    padding-top: 100px;
+  }
+}
+
+/*-----------X----------END OF RESPONSIVENESS/MEDIA QUERIES FOR HOME PAGE--------X------------------*/
+
+
+
+
+
+
+
+
+/*---------------START OF CONTACT PAGE -----------------*/
+/*---------CONTACT FORM INSPIRED BY https://codepen.io/ssbalakumar/pen/uzDIA----------------------*/
+
+/*--PAGE LAYOUT----*/
+.contact-section {
+  max-width: 1335px;
+  margin: 0 auto;
+  overflow: auto;
+  padding-bottom: 10px;
+  min-height: 100%;
+}
+
+/*--FONT STYLING----*/
+.contact-section h1 {
+  text-align: center;
+  color: rgb(5, 4, 4);
+  padding-top: 160px;
+  letter-spacing: 5px;
+  font-weight: 300;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+.contact-section h2 {
+  text-align: center;
+  font-size: 20px;
+  color: rgb(235, 57, 13);
+  text-transform: none;
+}
+
+
+.border {
+  width: 100px;
+  height: 4px;
+  background-color: rgb(0, 0, 0);
+  margin: 40px auto;
+
+}
+
+/*--CONTACT FORM----*/
+.contact-form {
+
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+
+}
+
+.contact-form-text {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 24px;
+
+  margin: 16px 0;
+  border: 0;
+  background: rgba(231, 221, 221, 0.295);
+  padding: 20px 40px;
+  outline: none;
+  color: rgb(255, 0, 0);
+  transition: 0.5s;
+}
+
+.contact-form-text:hover {
+  box-shadow: 0 0 10px 4px rgba(231, 221, 221, 0.61);
+}
+
+textarea .contact-form-text {
+  resize: none;
+  height: 120px;
+
+}
+
+/*--SEND BUTTON----*/
+/*--CODE FROM https://codepen.io/bobbykorec/pen/qOGbyr----*/
+.send-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 38%;
+  box-sizing: border-box;
+  border: 0;
+  margin-top: 40px;
+  height: 31px;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+  background-color: #04080b;
+  margin-bottom: 100px;
+
+
+}
+
+.button {
+  padding-top: 6px;
+  width: 100%;
+  height: 34px;
+  transition: all .2s ease-in-out;
+  color: white;
+  font-size: 18px;
+}
+
+.send-text {
+  display: block;
+  margin-top: 6px;
+  font: 300 22px 'Lato', sans-serif;
+  letter-spacing: 3px;
+  color: white;
+}
+
+.button:hover {
+  transform: translate3d(0px, -29px, 0px);
+}
+
+
+/*---------------------RESPONSIVENESS/MEDIA QUERIES FOR CONTACT PAGE--------------------------*/
+@media only screen and (max-width: 375px) {
+
+  .contact-section h1 {
+    font-size: 40px;
+    padding: 10px 10px 0 0;
+  }
+
+  .contact-section {
+    padding-top: 90px;
+  }
+
+}
+
+/*----------X-----------END OF RESPONSIVENESS/MEDIA QUERIES FOR CONTACT PAGE--------X------------------*/
+
+
+
+
+
+/*-------------X-------END OF CONTACT PAGE ----------X-------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------START OF PORTFOLIO PAGE ------------------------*/
+/*--PAGE LAYOUT----*/
+.container {
+  padding-top: 90px;
+  max-width: 1335px;
+  margin: 0 auto;
+  overflow: auto;
+  min-height: 100%;
+}
+
+/*-------MAIN TEXT---------*/
+.portfolio-title h1 {
+  color: rgb(17, 16, 16);
+  font-size: 50px;
+}
+
+.portfolio-title p {
+  color: rgb(17, 16, 16);
+  font-size: 22px;
+  font-weight: 300;
+  text-transform: none;
+  width: 60%;
+
+}
+
+.portfolio-title {
+  margin-right: 200px;
+  margin-left: 20px;
+}
+
+.project-name {
+  color: #E71D36;
+}
+
+.project-name:hover {
+  color: rgb(17, 16, 16);
+  font-weight: 300;
+}
+
+
+
+/*--------GRID LAYOUT----------*/
+.grid-row {
+  padding-top: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.grid-item {
+  height: 650px;
+  flex-basis: 30%;
+  -moz-box-flex: auto;
+  width: 29px;
+  position: relative;
+  padding: 14px;
+  box-sizing: border-box;
+}
+
+.grid-row a {
+  text-decoration: none;
+}
+
+.grid-item-wrapper {
+  -webkit-box-sizing: initial;
+  -moz-box-sizing: initial;
+  box-sizing: initial;
+  background: #ececec;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  -webkit-transition: padding 0.15s cubic-bezier(0.4, 0, 0.2, 1), margin 0.15s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: padding 0.15s cubic-bezier(0.4, 0, 0.2, 1), margin 0.15s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.grid-item-container {
+  height: 120%;
+  width: 100%;
+  position: relative;
+}
+
+.grid-image-top {
+  height: 54%;
+  width: 130%;
+  background-size: cover;
+  position: relative;
+  background-position: 5% 50%;
+  left: -10.5%;
+  top: -4.5%;
+}
+
+.grid-image-top .centered {
+  text-align: center;
+  transform: translate(-50%, -50%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  display: block;
+  top: 54.5%;
+  left: 50%;
+  width: 0%;
+  height: 5%;
+  background-position: center;
+}
+
+.grid-image-top{
+  background: rgb(47, 248, 228);
+}
+.grid-item-content {
+  padding: 0 17px 17px 17px;
+}
+
+.item-title {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  display: block;
+}
+
+.item-category {
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 55px;
+  font-size: 14px;
+}
+
+.links1 {
+  margin-left: 20px;
+}
+
+.grid-item:hover .more-info i {
+  padding-left: 20px;
+  transition-duration: .5s;
+}
+
+.more-info i::before {
+  font-size: 16px;
+}
+
+.grid-item:hover .grid-item-wrapper {
+  padding: 4% 4%;
+  margin: -4% -4%;
+}
+
+/*-- IMAGES INSIDE THE GRID----*/
+.port-image {
+  width: 70%;
+  padding: 30% 0 0 12%;
+}
+
+.port-imagef {
+  width: 50%;
+  padding: 12% 20% 0 20%;
+}
+
+.port-imageg {
+  width: 70%;
+  padding: 20% 0 0 12%;
+}
+
+
+
+
+/*---------------------RESPONSIVENESS/MEDIA QUERIES FOR PORTFOLIO PAGE--------------------------*/
+
+@media only screen and (max-width:555px) {
+  .portfolio-title {
+    text-align: left;
+    margin: 8px 0 18px 28px;
+  }
+
+  .portfolio-title h1 {
+    font-size: 37px;
+  }
+
+  .portfolio-title p {
+    font-size: 16px;
+    width: 87%;
+  }
+
+}
+
+@media(max-width: 1333px) {
+  .grid-item {
+    flex-basis: 33.33%;
+  }
+}
+
+@media(max-width: 1073px) {
+  .grid-item {
+    flex-basis: 33.33%;
+  }
+}
+
+@media(max-width: 815px) {
+  .grid-item {
+    flex-basis: 50%;
+  }
+}
+
+@media(max-width: 555px) {
+  .grid-item {
+    flex-basis: 100%;
+  }
+}
+
+
+
+/*----------X-----------END OF RESPONSIVENESS/MEDIA QUERIES FOR PORTFOLIO PAGE---------X-----------------*/
+
+
+
+
+
+
+/*---------------START OF CV PAGE -----------------*/
+
+.clear {
+  clear: both;
+}
+
+.purple {
+  color: #208C81;
+}
+
+.block {
+  margin: 25px 30px;
+  padding-bottom: 10px;
+}
+
+.block h1 {
+  margin-left: -5px;
+  font-weight: 200;
+}
+
+.block p {
+  text-transform: none;
+  font-size: 20px;
+}
+
+.block .p-pad {
+  text-transform: none;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.last.block {
+  margin-bottom: 110px;
+}
+
+.horizontal_list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.horizontal_list li {
+  float: left;
+}
+
+.horizontal_list li:before {
+  content: none;
+}
+
+.horizontal_list li {
+  padding-left: 0;
+  text-indent: 0;
+}
+
+.horizontal_line {
+  margin: 34px 0 0 30px;
+  height: 26px;
+  position: relative;
+}
+
+.line_left {
+  border-top: 1px solid #2EC4B6;
+  width: 100%;
+  margin-top: 13px;
+}
+
+
+
+/* TYPOGRAPHY FOR CV PAGE*/
+
+
+h1 {
+  font-size: 48px;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 28px;
+  margin: 32px 0 24px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+blockquote {
+  margin: 25px 0;
+  padding-left: 20px;
+  border-left: 2px solid #E71D36;
+  text-transform: none;
+}
+
+
+
+/* SIZING OF SECTIONS */
+
+#main_container {
+  padding-top: 150px;
+  width: 960px;
+  margin: 0 auto;
+}
+
+#header {
+  height: 130px;
+  border-bottom: 1px solid #403F44;
+}
+
+.header_logotype_container {
+  width: 260px;
+  height: 130px;
+  border-right: 1px solid #403F44;
+  float: left;
+}
+
+.header_menu_container {
+  height: 130px;
+  width: 699px;
+  float: left;
+}
+
+.header_menu_container a {
+  font-family: 'Lato', Helvetica, sans-serif;
+}
+
+#left_col {
+  width: 260px;
+  float: left;
+}
+
+#content_container {
+  width: 699px;
+  border-left: 1px solid #403F44;
+  float: left;
+}
+
+#footer {
+  width: 960px;
+  height: 60px;
+  border-top: 1px solid #403F44;
+  display: inline-block;
+}
+
+/* LOGO FOR CV */
+
+.logotype_name {
+  text-transform: uppercase;
+  font-size: 32px;
+  margin: 43px 0 0;
+}
+
+.logotype_occupation {
+  text-transform: uppercase;
+  margin-top: 5px;
+  color: #23e79c;
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding-left: 7px;
+}
+
+
+
+
+/* IMAGE */
+
+.profile_frame {
+  width: 230px;
+  height: 260px;
+  background: black;
+  border: 1px solid #403F44;
+  margin-top: 30px;
+}
+
+/* CONTACT DETAILS */
+.hello_content,
+.contact_details_content {
+  margin-top: 25px;
+}
+
+.hello_content {
+  width: 230px;
+}
+
+.contact_details_content h2+p.purple {
+  margin-top: 10px;
+}
+
+.contact_details_content p {
+  margin: 0;
+}
+
+.contact_details_content p.purple {
+  margin-top: 25px;
+}
+
+/* SEND BUTTON */
+.send_message_button,
+.special_button {
+  margin-top: 25px;
+  display: block;
+  background: #E71D36;
+  width: 230px;
+  height: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+  text-align: center;
+  color: #04080b;
+  width: 230px;
+  height: 50px;
+  display: block;
+  position: relative;
+  letter-spacing: 2px;
+  z-index: 2;
+  font: 17px;
+  margin: 0;
+  padding: 19.5px 0 0;
+  top: -4px;
+  bottom: 8px;
+
+}
+
+.send_message_button:hover,
+.special_button:hover {
+  background: rgb(37, 201, 184);
+}
+
+
+
+/* DESCRIPTION ABOUT ME SECTION */
+
+.profile_quote {
+  position: relative;
+}
+
+.profile_quote p {
+  font-size: 17px;
+  width: 455px;
+}
+
+.profile_quote .entypo-quote {
+  color: #000000;
+  font-size: 80px;
+  font-style: normal;
+  position: relative;
+  top: -20px;
+  right: 70px;
+  cursor: default;
+}
+
+
+/* INTERESTS SECTION */
+
+.interests-items {
+  box-sizing: border-box;
+  padding: 0 15px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.interests-items div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.interests-items div:hover i {
+  transform: scale(1.2);
+}
+
+.interests-items div:hover span {
+  color: rgb(47, 248, 228);
+  transition-duration: 0.3s;
+}
+
+.interests-items div i {
+  font-size: 49px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  color: #2EC4B6;
+  transition-duration: 0.3s;
+}
+
+.interests-items div span {
+  display: block;
+}
+
+.interest-font {
+  color: rgb(0, 0, 0);
+  font-family: 'entypo', sans-serif;
+  letter-spacing: 2px;
+  padding: 5px;
+}
+
+
+
+
+
+
+/* SKILLS SECTION INSPIRED BY https://codepen.io/pankajparashar/pen/qDKGo*/
+.progress {
+  margin: 20px auto;
+  padding: 0;
+  width: 90%;
+  height: 30px;
+  overflow: hidden;
+  background: #616161;
+  border-radius: 6px;
+}
+
+.bar {
+  position: relative;
+  float: left;
+  min-width: 1%;
+  height: 100%;
+  background: rgb(47, 248, 228);
+}
+
+.percent {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  padding-left: 25px;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-size: 12px;
+  color: rgb(7, 0, 0);
+}
+
+.skill-name {
+
+  font-size: 18px;
+  font-family: 'Lato', Helvetica, sans-serif;
+  color: rgb(2, 2, 2);
+
+}
+
+
+
+
+/*------X---------END OF START OF CV PAGE ----------X-------*/
+
+
+
+
+
+
+/*---------------------RESPONSIVENESS/MEDIA QUERIES FOR CV PAGE--------------------------*/
+
+
+@media screen and (max-width: 569px) {
+  #contact {
+    height: 1200px;
+  }
+
+  .section-header {
+    font-size: 50px;
+  }
+
+  .direct-contact-container,
+  .form-wrapper {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .form-control,
+  textarea {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  .name,
+  .email,
+  textarea {
+    width: 280px;
+  }
+
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 280px;
+  }
+
+  .social-media-list {
+    left: 0;
+  }
+
+  .social-media-list li {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    font-size: 2rem;
+  }
+
+  .social-media-list li:after {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+  }
+
+}
+
+@media screen and (max-width: 410px) {
+  .send-button {
+    width: 99%;
+  }
+}
+
+
+
+/*-------X--------------END OF RESPONSIVENESS/MEDIA QUERIES FOR CV PAGE----------------X----------*/
+
+
+
+
+
+
+
+/*--------------START OF WEBSITE FOOTER-------------*/
+.site-footer {
+  padding: 19px 0 20px;
+  font-size: 15px;
+  line-height: 4px;
+  color: #737373;
+  border-top: 2px solid grey;
+  margin-top: 20px;
+}
+
+
+/* SOCIAL MEDIA ICONS */
+/* CODE FROM https://codepen.io/Raghdaal/pen/KKwMmpw*/
+.site-footer .social-icons {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.site-footer .social-icons a {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: #eaebec
+}
+
+
+/* COPYRIGHT TEXT */
+.copyright-text {
+  margin: 0;
+  padding-left: 40px;
+
+}
+
+/*---------------------START OF RESPONSIVENESS/MEDIA QUERIES FOR FOOTER --------------------------*/
+
+@media (max-width:991px) {
+  .site-footer [class^=col-] {
+    margin-bottom: 30px
+  }
+}
+
+@media (max-width:767px) {
+  .site-footer {
+    padding-bottom: 0
+  }
+
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  padding-right: 10px;
+  list-style: none
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 4px;
+  padding-right: 10px;
+}
+
+.social-icons a {
+  background-color: rgb(187, 36, 36);
+  color: #818a91;
+  font-size: 30px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #fff;
+  background-color: #29aafe
+}
+
+.social-icons a.facebook:hover {
+  background-color: #2e53a3
+}
+
+.social-icons a.twitter:hover {
+  background-color: #00f5a3
+}
+
+.social-icons a.linkedin:hover {
+  background-color: #0478ad
+}
+
+.social-icons a.codepen:hover {
+  background-color: #131313
+}
+
+@media (max-width:767px) {
+  .social-icons li.title {
+    display: block;
+    margin-right: 0;
+    font-weight: 600
+  }
+}
+
+/*-------X--------------END OF RESPONSIVENESS/MEDIA QUERIES FOR FOOTER --------X------------------*/

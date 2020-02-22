@@ -1,29 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <style>
-        h1{
-            font-size: 3em;
-        }
-        </style>
-   
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Home Page</title>
+  <link rel="stylesheet" href="stylesheet/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/2fb9dd8901.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <h1>Ifrah Vermeer</h1>
+
+  <!------MAIN NAVIGATION----code for navigation https://codepen.io/mutedblues/pen/MmPNPG----->
+  <header class="header">
     <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li class="active">
-            <a href="#">About</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+      <a href="index.html" class="logo">IFRAHV</a>
+      <input class="menu-btn" type="checkbox" id="menu-btn">
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li class="mc"><a href="index.html">Home</a></li>
+        <li class="mc"><a href="portfolio.html">Portfolio</a></li>
+        <li class="mc"><a href="cv.html">About</a></li>
+        <li class="mc"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!---x---END OF MAIN NAVIGATION----x-->
+
+  <!----------------------------------START OF MAIN CONTENT------------------------------------------>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="ifrah1">
+          Hi, my name is
+          <em class="red">Ifrah</em> Vermeer
+        </h1>
+        <p class="hometext">I am a student Software Engineer who is passionate about
+          <em class="text-highlight">design and coding.</em>
+          <!---------HIGHLIGHT INSPIRED BY https://codepen.io/pugson/pen/EwmKJp----------->
+        </p>
+
+
+
+        <!----------------BUTTON CODE https://codepen.io/lookingforsome/pen/oLJkoO------------------------>
+
+        <div class="svg-wrapper">
+          <!--Height and width measurements needed in html file and it doesn't work, if it is in the CSS file as shown in the codepen as well-->
+          <svg height="48" width="323" xmlns="http://www.w3.org/2000/svg">
+            <rect class="shape" height="48" width="323" />
+            <p class="text"><a href="cv.html">MORE ABOUT ME</a></p>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <!------x----------END OF BUTTON-------------------x----->
+  </main>
+
+  <!-------------------x--------------END OF  MAIN CONTENT-----------------x------------------------>
+
+  <div class="container">
+    <section class="portfolio-title">
+      <h1>Featured Projects </h1>
+      <p>A collection of my most recent work can be found here. This portfolio is regularly update with new and improved
+        projects,designs and experiments. My most current project is creating and devloping <strong
+          class=project-name>My portfolio.</strong> I try to make my projects varied and interesting.</p>
+    </section>
+
+
+    <!-- FIRST GRID-->
+    <div class="grid-row">
+      <div class="grid-item">
+        <a class="wrapping-link" href="index.html"></a>
+        <div class="grid-item-wrapper">
+          <div class="grid-item-container">
+            <div class="grid-image-top">
+              <img class="port-image" src="images/portfolio-image.png" alt="image of portfolio site">
+              <span class="centered project-image-bg"></span>
+            </div>
+            <div class="grid-item-content">
+              <span class="item-title">Portfolio Website</span>
+              <span class="item-category"> This is Web development project that was designed in my first year of
+                university using HTML and css.</span>
+              <ul>
+                <li class="links"><a href="index.html">View Project</a></li>
+                <li class="links1"><a href="https://github.com/ifrahv/assignment-0-portfolio">View Code</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECOND GRID-->
+      <div class="grid-item">
+        <a class="wrapping-link" href=""></a>
+        <div class="grid-item-wrapper">
+          <div class="grid-item-container">
+            <div class="grid-image-top">
+              <img class="port-imageg" src="images/greenfoot-image.png" alt="image of a greenfoot project">
+              <span class="centered project-image-bg "></span>
+            </div>
+            <div class="grid-item-content">
+              <span class="item-title">Greenfoot Game</span>
+              <span class="item-category">This was created in my problem solving and programming class using
+                java.</span>
+              <li class="links">View Project</li>
+              <li class="links1">View Code</li>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- THIRD GRID-->
+      <div class="grid-item">
+        <a class="wrapping-link" href="" target="_blank"></a>
+        <div class="grid-item-wrapper">
+          <div class="grid-item-container">
+            <div class="grid-image-top ">
+              <img class="port-imagef" src="images/food-site.jpg" alt="image of a restaurant">
+              <span class="centered project-image-bg "></span>
+            </div>
+            <div class="grid-item-content">
+              <span class="item-title">FUTURE PROJECT IDEA</span>
+              <span class="item-category">A website design for an in-trend restaurant with interactive features for
+                users.</span>
+              <li class="links">View Project</li>
+              <li class="links1">View Code</li>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOURTH GRID-->
+      <div class="grid-item">
+        <a class="wrapping-link" href="" target="_blank"></a>
+        <div class="grid-item-wrapper">
+          <div class="grid-item-container">
+            <div class="grid-image-top">
+              <img class="port-image" src="images/cal.png" alt="image of a calculator">
+              <span class="centered project-image-bg "></span>
+            </div>
+            <div class="grid-item-content">
+              <span class="item-title">FUTURE PROJECT IDEA</span>
+              <span class="item-category">creating a basic calculater app</span>
+              <li class="links">View Project</li>
+              <li class="links1">View Code</li>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- FIFTH GRID-->
+      <div class="grid-item">
+        <a class="wrapping-link" href=""></a>
+        <div class="grid-item-wrapper">
+          <div class="grid-item-container">
+            <div class="grid-image-top ">
+              <img class="port-imageg" src="images/movie.jpg" alt="Image of a movie setting">
+              <span class="centered project-image-bg "></span>
+            </div>
+            <div class="grid-item-content">
+              <span class="item-title">FUTURE PROJECT IDEA</span>
+              <span class="item-category">developing a website that compares movies.</span>
+              <li class="links">View Project</li>
+              <li class="links1">View Code</li>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- LAST GRID-->
+      <div class="grid-item">
+        <a class="wrapping-link" href=""></a>
+        <div class="grid-item-wrapper">
+          <div class="grid-item-container">
+            <div class="grid-image-top">
+              <img class="port-imageg" src="images/idea.jpg" alt="Images of future ideas">
+              <span class="centered project-image-bg"></span>
+            </div>
+            <div class="grid-item-content">
+              <span class="item-title">FUTURE PROJECT IDEA</span>
+              <span class="item-category">More ideas coming soon !</span>
+              <li class="links">View Project</li>
+              <li class="links1">View Code </li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------x--------------END OF  PORTFOLIO-------x------------------------>
+    <div id="main_container">
+      <div id="header">
+        <div class="header_logotype_container">
+          <h1 class="logotype_name">Ifrah <span class="purple">Vermeer</span></h1>
+        </div>
+      </div>
+      <!-- SEND BUTTON -->
+      <div id="left_col">
+        <a href="mailto:Ifrah.vermeer@gmail.com" class="send_message_button">
+          <span class="cut1"></span>
+          <span class="cut2"></span>
+          <span class="content">Send me a message <span class="fontawesome-double-angle-right"></span></span>
+        </a>
+        <div class="profile_frame">
+        </div>
+        <!-- EDUCATION -->
+        <div class="Education1">
+          <h2>Education</h2>
+          <p class="ed-font">Bsc Computer Science (Software Engineering)</p>
+          <ul class="edul1">
+            <li> University of Northampton</li>
+            <li>2019 - present</li>
+          </ul>
+        </div>
+        <!-- CONTACT DETAILS-->
+        <div class="contact_details_content">
+          <h2>Contact me</h2>
+          <p class="purple">Moblie Number:</p>
+          <p>+44 7719 033736</p>
+          <p class="purple">Email address:</p>
+          <p>Vermeer.Ifrah@gmail.com</p>
+          <p class="purple">Current Address:</p>
+          <p>3 Torridon Court</p>
+          <p>Bletchley, Milton Keynes</p>
+          <p>MK2 3PP</p>
+        </div>
+      </div>
+      <!-- ABOUT ME-->
+      <div id="content_container">
+        <div class="block">
+          <h1>About me</h1>
+          <blockquote class="profile_quote">
+            <p>"I'm a student studying software engineering at The University of Northampton. I am a beginneer coder that
+              is learning more about the industry everyday. I am a motivated individual that is aspiring to work for a
+              well-respected company within the next couple of years."</p>
+          </blockquote>
+        </div>
+        <!-- WORK EXPERIENCE-->
+        <div class="block">
+          <h2>Work Experience</h2>
+          <p>I do have work experience through working part-time whilst studying. This helped me to improve my personal
+            and professional development. I am a hard-working and flexible individual that is able to meet and surpass
+            expectations set out.</p>
+        </div>
+        <!--SKILLS SECTION INSPIRED BY https://codepen.io/pankajparashar/pen/qDKGo-->
+        <div class="block">
+          <h2>Skills</h2>
+          <p class="p-pad">I am become more experienced every single day and strive to reach the highest standard of
+            practice.</p>
+          <span class="skill-name">HTML</span>
+          <div class="progress">
+            <div class="bar" style="width:85%">
+              <p class="percent">Experienced</p>
+            </div>
+          </div>
+  
+          <span class="skill-name">C++</span>
+          <div class="progress">
+            <div class="bar" style="width:25%">
+              <p class="percent">Beginneer</p>
+            </div>
+          </div>
+  
+          <span class="skill-name">CSS</span>
+          <div class="progress">
+            <div class="bar" style="width:75%">
+              <p class="percent">Intermediatte</p>
+            </div>
+          </div>
+  
+          <span class="skill-name">JavaScript</span>
+          <div class="progress">
+            <div class="bar" style="width:35%">
+              <p class="percent">Beginner</p>
+            </div>
+          </div>
+        </div>
+        <!--INTERESTS AND HOBBIES-->
+        <div class="last block">
+          <h2>Interests & Hobbies</h2>
+          <div class="interests-items">
+            <div><i class="fa fa-music"></i><span class="interest-font">Music</span></div>
+            <div><i class="fas fa-video"></i><span class="interest-font">Movies</span></div>
+            <div><i class="fas fa-paint-brush"></i><span class="interest-font">Painting</span></div>
+            <div><i class="fas fa-route"></i><span class="interest-font">Traveling</span></div>
+            <div><i class="fas fa-biking"></i><span class="interest-font">Sports</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+
+
+    <!----------------------------------START OF CONTACT FORM-------------------------------->
+  <!---------CONTACT FORM INSPIRED BY https://codepen.io/ssbalakumar/pen/uzDIA---------------------->
+  <div class="contact-section">
+    <h1> Let's Work Together!</h1>
+    <h2>Have any questions ? here are some ways to contact me...</h2>
+    <div class="border"></div>
+    <form action="http://formspree.io/ifrah.vermeer@gmail.com" method="post">  <!---------------form allows the contact form to actually work---------------->
+      <input type="text" name="name" class="contact-form-text" placeholder="your name">
+      <input type="email" name="email address" class="contact-form-text" placeholder="your email">
+      <input type="text" name="number" class="contact-form-text" placeholder="your phone">
+      <textarea class="contact-form-text" name="message" placeholder="Your Message"></textarea>
+
+ <!---------SEND BUTTON INSPIRED BY https://codepen.io/bobbykorec/pen/qOGbyr---------------------->
+      <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+        <div class="button">
+          <i class="fas fa-paper-plane"></i><span class="send-text">SEND</span>
+        </div>
+      </button>
+    </form>
+
+ <!-------------------x--------------END OF  CONTACT FORM-------x------------------------>
+
+  
+  <!---------------------------------FOOTER----------https://codepen.io/poojanahelia/pen/pooExPZ------------------------------->
+  <footer class="site-footer">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Designed and developed by Ifrah Vermeer &copy; 2020.
+        </p>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <!--SOCIAL MEDIA ICONS INSPIRED BY https://codepen.io/Raghdaal/pen/KKwMmpw-->
+        <ul class="social-icons">
+          <li><a class="twitter" href="https://github.com/ifrahv"><i class="fab fa-github"></i></a></li>
+          <li><a class="facebook" href="https://www.facebook.com/ifrah.vermeer"><i class="fab fa-facebook"></i></a>
+          </li>
+          <li><a class="linkedin" href="https://www.linkedin.com/in/ifrah-vermeer-37498018a/"><i
+                class="fab fa-linkedin"></i></a></li>
+          <li><a class="codepen" href="https://codepen.io/ifrahv"><i class="fab fa-codepen"></i></a></li>
         </ul>
-      </nav>
-         
+      </div>
+    </div>
+  </footer>
+  <!-------------------x--------------END OF  FOOTER-------x------------------------>
 </body>
+
 </html>
