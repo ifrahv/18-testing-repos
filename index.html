@@ -15,17 +15,19 @@
 
 <body>
 
+
   <!------MAIN NAVIGATION----code for navigation https://codepen.io/mutedblues/pen/MmPNPG----->
+  
   <header class="header">
     <nav>
       <a href="index.html" class="logo">IFRAHV</a>
       <input class="menu-btn" type="checkbox" id="menu-btn">
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
       <ul class="menu">
-        <li class="mc"><a href="index.html">Home</a></li>
-        <li class="mc"><a href="portfolio.html">Portfolio</a></li>
-        <li class="mc"><a href="cv.html">About</a></li>
-        <li class="mc"><a href="contact.html">Contact</a></li>
+        <li class="mc"><a href="#hero1">Home</a></li>
+        <li class="mc"><a href="#portfolio">Portfolio</a></li>
+        <li class="mc"><a href="#main_container">About</a></li>
+        <li class="mc"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -34,7 +36,7 @@
   <!----------------------------------START OF MAIN CONTENT------------------------------------------>
 
   <main>
-    <section class="hero">
+    <section class="hero" id="hero1">
       <div class="hero-content">
         <h1 class="ifrah1">
           Hi, my name is
@@ -64,7 +66,7 @@
   <!-------------------x--------------END OF  MAIN CONTENT-----------------x------------------------>
 
   <div class="container">
-    <section class="portfolio-title">
+    <section class="portfolio-title" id="portfolio">
       <h1>Featured Projects </h1>
       <p>A collection of my most recent work can be found here. This portfolio is regularly update with new and improved
         projects,designs and experiments. My most current project is creating and devloping <strong
@@ -301,7 +303,7 @@
 
     <!----------------------------------START OF CONTACT FORM-------------------------------->
   <!---------CONTACT FORM INSPIRED BY https://codepen.io/ssbalakumar/pen/uzDIA---------------------->
-  <div class="contact-section">
+  <div class="contact-section" id="contact">
     <h1> Let's Work Together!</h1>
     <h2>Have any questions ? here are some ways to contact me...</h2>
     <div class="border"></div>
@@ -343,6 +345,10 @@
     </div>
   </footer>
   <!-------------------x--------------END OF  FOOTER-------x------------------------>
+  <div class="cursor"></div>
+  <div class="cursor2"></div>
+   <!--Javascript Link-->
+  <script type="text/javascript" src="stylesheet/main.js"></script>
 </body>
 
 </html>

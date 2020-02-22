@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  cursor: none;
 }
 
 body {
@@ -12,6 +13,7 @@ body {
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
   text-decoration: none;
+  cursor: none;
  
 }
 
@@ -1185,6 +1187,8 @@ blockquote {
 
 }
 
+/*--------------END OF WEBSITE FOOTER-------------*/
+
 /*---------------------START OF RESPONSIVENESS/MEDIA QUERIES FOR FOOTER --------------------------*/
 
 @media (max-width:991px) {
@@ -1266,3 +1270,43 @@ blockquote {
 }
 
 /*-------X--------------END OF RESPONSIVENESS/MEDIA QUERIES FOR FOOTER --------X------------------*/
+
+
+/*---------------------START OF CUSTOMIZED CURSOR--------------------------*/
+.cursor {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 1px solid black;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 200ms ease-out;
+  z-index:20;
+}
+
+.cursor2 {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: black;
+  opacity: .3;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width .3s, height .3s, opacity .3s;
+  z-index:20;
+}
+
+.hover {
+  background-color: rgb(30, 255, 0);
+  opacity: 0.5;
+}
+
+.cursorinnerhover {
+  width: 80px;
+  height: 80px;
+  opacity: .5;
+}
+
+/*---------------------END OF CUSTOMIZED CURSOR--------------------------*/
