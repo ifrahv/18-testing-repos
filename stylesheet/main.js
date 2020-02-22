@@ -33,7 +33,7 @@ document.addEventListener('mouseup', function(){
   cursorinner.classList.remove('cursorinnerhover')
 });
 
-//this allows the color to change when hovering over a link
+//this checks to change the color of hover
 a.forEach(item => {
   item.addEventListener('mouseover', () => {
     cursor.classList.add('hover');
@@ -42,3 +42,4 @@ a.forEach(item => {
     cursor.classList.remove('hover');
   });
 })
+// END OF CURSOR //
