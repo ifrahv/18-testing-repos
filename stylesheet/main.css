@@ -16,7 +16,9 @@ body {
   cursor: none;
  
 }
-
+html{
+  scroll-behavior:smooth;
+}
 
 
 /*--------------Navigation for all websites-------------*/
