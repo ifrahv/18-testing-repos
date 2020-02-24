@@ -44,5 +44,22 @@ a.forEach(item => {
 })
 // END OF CURSOR //
 
+window.onload = function(){
+  const EFFECT = document.querySelector(".portfolio-title");
 
+  window.addEventListener('scroll', scrollEffect);
+
+  function scrollEffect () {
+    if(window.scrollY>500) {
+      EFFECT.style.opacity = '1';
+      EFFECT.style.transform = 'translateY(-20px)';
+      EFFECT.style.transition = '1s ease-in-out';
+
+    } else{
+      EFFECT.style.opacity = '0';
+      EFFECT.style.transform = 'translateY(0px)';
+    }
+  }
+
+}
 
