@@ -730,6 +730,51 @@ textarea .contact-form-text {
 
 /*---------------START OF CV PAGE -----------------*/
 
+
+/*---------------ABOUT ME TITLE  -----------------*/
+
+.about-me h1 {
+  color: rgb(17, 16, 16);
+  font-size: 50px;
+ 
+}
+
+.about-me p {
+  color: rgb(17, 16, 16);
+  font-size: 22px;
+  font-weight: 300;
+  text-transform: none;
+  
+
+}
+
+.about-me {
+ margin:0 auto;
+ width: 60%;
+ padding-top: 300px;
+ padding-bottom: 200px;
+}
+
+/*---------------ABOUT ME CV BUTTON -----------------*/
+.cv {
+  border: 1.5px solid rgb(47, 248, 228);
+  font-size: 22px;
+  font-weight: 300;
+  border-radius: 3px;
+  padding: 0.75rem 1rem;
+}
+
+
+.cv-button{
+  margin-top: 50px;
+ 
+}
+
+.cv:hover{
+  background: rgb(47, 248, 228);
+
+}
+/*---------------CV LAYOUT-----------------*/
 .clear {
   clear: both;
 }
