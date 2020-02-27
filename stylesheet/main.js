@@ -44,6 +44,8 @@ a.forEach(item => {
 })
 // END OF CURSOR //
 
+
+// START OF PORTFOLIO TEXT FADE IN //
 window.onload = function(){
   const EFFECT = document.querySelector(".portfolio-title");
 
