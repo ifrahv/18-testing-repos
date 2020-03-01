@@ -2,7 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  cursor: none;
 }
 
 body {
@@ -20,6 +19,14 @@ html{
   scroll-behavior:smooth;
 
 }
+
+.cv-page{
+
+position: relative;
+z-index: 2;
+cursor: pointer
+}
+
 
 
 
@@ -117,78 +124,115 @@ li a:hover:after {
 
 /*------------START OF HAMBRUGER MENU------------- */
 
-.header .menu {
-  clear: both;
-  max-height: 0;
-  transition: max-height .2s ease-out;
-}
 
-/*-------start of the menu icon----------*/
 
-.header .menu-icon {
-  cursor: pointer;
-  position: relative;
-  padding: 20px 20px;
-  float: right;
-  user-select: none;
-}
 
-.header .menu-icon .navicon {
-  background: rgb(179, 27, 27);
-  display: inline-block;
-  height: 3px;
-  position: relative;
-  transition: background .2s ease-out;
-  width: 24px;
-
-}
-
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
-  background: rgb(230, 4, 4);
-  content: '';
-  display: block;
-  height: 100%;
-  position: relative;
-  transition: all .2s ease-out;
-  width: 100%;
-}
-
-.header .menu-icon .navicon:before {
-  top: 5px;
-}
-
-.header .menu-icon .navicon:after {
-  top: -5px;
-}
 
 /*-------start of the menu button----------*/
 
-.header .menu-btn {
-  display: none;
+.btn-menu {
+  position: absolute;
+  background: #0cebeb;
+  padding: 20px;
+  top: 10px;
+  right: 50px;
+  border-radius: 50%;
+  z-index: 9999;
 }
 
-.header .menu-btn:checked~.menu {
-  max-height: 240px;
+.btn-menu:hover,
+.btn-menu:active {
+  background: #29ffc6;
+  cursor: pointer;
+  transition: color .5s ease;
 }
 
-.header .menu-btn:checked~.menu-icon .navicon {
-  background: transparent;
+.btn-menu:after {
+  color:#fff;
+  font-size: 20px;
+  content:"\f0c9";
+  font-family:"FontAwesome";
+  transition-property:all .2s linear 0s;
+  -moz-transition:all .2s linear 0s;
+  -webkit-transition:all .2s linear 0s;
+  -o-transition:all .2s linear 0s;
 }
 
-.header .menu-btn:checked~.menu-icon .navicon:before {
-  transform: rotate(-45deg);
+
+.overlay {
+  background-color: rgba(0,0,0,1);
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
 }
 
-.header .menu-btn:checked~.menu-icon .navicon:after {
-  transform: rotate(45deg);
+ .open {
+    position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      max-height: 1200px;
+      opacity: 1;
+      z-index: 100;
+      transition: all 0.3s ease;
 }
 
-.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
-  top: 0;
+.overlay ul {
+  list-style-type: none;
+    margin-top: 2em;
+    font-size: 3rem;
+}
+.overlay ul li a{
+  position: relative;
+  display: inline-block;
+  font-size: 35px;
+  font-weight: 300;
+  color: #fff;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+  padding: 3px 0;
+  margin-bottom: 40px;
 }
 
+.overlay ul li a:hover,
+.overlay ul li a:active {
+  color: #787878;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.overlay ul li a:hover::after,
+.overlay ul li a:hover::before {
+width: 100%;
+left: 0;
+}
+
+.overlay ul li a::after,
+.overlay ul li a::before {
+content: "";
+position: absolute;
+width: 0;
+right: 0;
+height: 2px;
+top: calc(100% + 5px);
+}
+
+.overlay ul li a::before {
+-webkit-transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
+  transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
+  background: #2196f3;
+}
+
+.overlay ul li a::before {
+-webkit-transition: width 0.5s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+  transition: width 0.5s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+  background: #20e3b2;
+}
 
 /*-------x----------------End of Navigation for all websites----------------------------x---*/
 
@@ -1366,3 +1410,54 @@ blockquote {
 }
 
 /*---------------------END OF CUSTOMIZED CURSOR--------------------------*/
+
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 52px;
+	height: 27px;
+	background: grey;
+	float: right;
+	border-radius: 100px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: var(--color-headings);
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 45px;
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}
