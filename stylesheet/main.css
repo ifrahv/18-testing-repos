@@ -565,16 +565,16 @@ textarea .contact-form-text {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-
 }
 
 .grid-item {
+
   height: 650px;
   flex-basis: 30%;
   -moz-box-flex: auto;
   width: 29px;
   position: relative;
-  padding: 14px;
+  padding: 24px;
   box-sizing: border-box;
 }
 
