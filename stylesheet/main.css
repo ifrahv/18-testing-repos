@@ -565,6 +565,7 @@ textarea .contact-form-text {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
+
 }
 
 .grid-item {
@@ -582,10 +583,11 @@ textarea .contact-form-text {
 }
 
 .grid-item-wrapper {
+  border-radius: 10px;
   -webkit-box-sizing: initial;
   -moz-box-sizing: initial;
   box-sizing: initial;
-  background: #ececec;
+  background: #f3f3f3;
   margin: 0;
   height: 100%;
   width: 100%;

@@ -45,6 +45,8 @@ a.forEach(item => {
 // END OF CURSOR //
 
 
+
+
 // START OF PORTFOLIO TEXT FADE IN //
 window.onload = function(){
   const EFFECT = document.querySelector(".portfolio-title");
@@ -69,9 +71,4 @@ window.onload = function(){
 
 // START OF MENU OVERLAY //
 
-function openMenu() {
-  document.querySelector('.overlay').classList.toggle("open");
-}
-
-document.querySelector('.btn-menu').onclick = openMenu;
 
