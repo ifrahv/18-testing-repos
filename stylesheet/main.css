@@ -244,7 +244,7 @@ li a:hover:after {
 /*-------------Start of main text------------- */
 
 main{
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
 }
 .hero {
   max-width: 1335px;
@@ -1424,4 +1424,23 @@ html.transition *:before,
 html.transition *:after {
   transition: all 750ms !important;
   transition-delay: 0 !important;
+}
+
+
+
+
+
+
+
+
+/* about page text fade in*/
+.about-me{
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s all ease-in-out;
+}
+
+.about-appear{
+  opacity: 1;
+  transform: translateY(0px);
 }

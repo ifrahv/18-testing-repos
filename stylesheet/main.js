@@ -72,3 +72,15 @@ window.onload = function(){
 // START OF MENU OVERLAY //
 
 
+function scrollAppear(){
+  var introText = document.querySelector('.about-me');
+  var introPosition = introText.getBoundingClientRect().top;
+  var screenPosition = window.innerHeight > 500;
+
+
+  if(introPosition < screenPosition){
+    introText.classList.add('about-appear');
+  }
+}
+
+window.addEventListener('scroll',scrollAppear);
