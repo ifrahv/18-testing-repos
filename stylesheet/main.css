@@ -7,12 +7,13 @@
 body {
   box-sizing: border-box;
   overflow-x: hidden;
-  background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/so-white.png) repeat;
+  background-color: rgb(47, 248, 228);
   Margin: 0%;
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
   text-decoration: none;
   cursor: none;
+  transition: all 0.5s ease;
  
 }
 html{
@@ -243,9 +244,7 @@ li a:hover:after {
 
 /*-------------Start of main text------------- */
 
-main{
-  background-color: #fff;
-}
+
 .hero {
   max-width: 1335px;
   margin: 0 auto;
@@ -1443,4 +1442,12 @@ html.transition *:after {
 .about-appear{
   opacity: 1;
   transform: translateY(0px);
+}
+
+
+
+/* color page */
+
+.bg-active{
+  background-color: #fff;
 }
