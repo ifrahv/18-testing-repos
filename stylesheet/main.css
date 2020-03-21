@@ -1433,9 +1433,9 @@ html.transition *:after {
 
 
 /* about page text fade in*/
-.about-me{
+.fade-in{
   opacity: 0;
-  transform: translateY(50px);
+  transform: translateY(20px);
   transition: 0.5s all ease-in-out;
 }
 

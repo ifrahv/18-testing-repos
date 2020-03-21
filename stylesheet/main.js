@@ -75,11 +75,13 @@ window.onload = function(){
 function scrollAppear(){
   var introText = document.querySelector('.about-me');
   var introPosition = introText.getBoundingClientRect().top;
-  var screenPosition = window.innerHeight > 500;
+  var screenPosition = window.innerHeight / 2;
 
 
   if(introPosition < screenPosition){
     introText.classList.add('about-appear');
+  }else{
+    introText.classList.remove('about-appear');
   }
 }
 
