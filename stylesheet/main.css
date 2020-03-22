@@ -254,27 +254,41 @@ li a:hover:after {
   position: relative;
 }
 
+.ifrah1{
+  font-size: 100px;
+  font-weight: 900;
+  letter-spacing: 8px;
+}
+
 .hero-content {
   margin: 0px 60px;
-  font-size: 50px;
+  font-size: 95px;
   font-weight: 600;
   color: #ffffff;
-  line-height: 55px;
+  line-height: 8rem;
   letter-spacing: 2px;
+
 
 }
 
 
 /*--inspired by https://codepen.io/pugson/pen/EwmKJp----*/
 .text-highlight {
-  font-style: normal;
-  border-radius: 1em 0 1em 0;
+  width: 580px;
+  height: 38px;
+  top: 482px;
+  margin-left: 30rem;
+  position: absolute;
+  z-index: -1;
+
+
+  
 
   background-image:
     linear-gradient(-100deg,
-      rgba(150, 243, 255, 0.15),
-      rgba(150, 243, 255, 0.8) 100%,
-      rgba(150, 239, 255, 0.25));
+      rgb(0, 255, 234),
+      rgba(0, 253, 255, 0.8) 100%,
+      rgba(0, 251, 255, 0.25));
 }
 
 /*--------x-----End of main text-----x-------- */

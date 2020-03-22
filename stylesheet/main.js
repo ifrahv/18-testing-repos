@@ -99,3 +99,25 @@ function bgChanger (){
 }
 
 window.addEventListener("scroll", bgChanger);
+
+
+
+
+
+
+
+let textarea = document.querySelector('textarea');
+let message = "Hello,\n\n\nMy  Name is Ifrah Vermeer";
+
+let animateInput = (input) => {
+  if (input.length == 0) return;
+  let timeout = (Math.random() * 20) + 50;
+
+  setTimeout(() => {
+    textarea.value += input.slice(0, 1);
+    animateInput(input.slice(1));
+  }, timeout);
+}
+
+textarea.focus();
+animateInput(message);
