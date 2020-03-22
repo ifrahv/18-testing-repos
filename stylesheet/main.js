@@ -71,11 +71,10 @@ window.onload = function(){
 
 // START OF MENU OVERLAY //
 
-
 function scrollAppear(){
-  var introText = document.querySelector('.about-meo');
+  var introText = document.querySelector('.about-me');
   var introPosition = introText.getBoundingClientRect().top;
-  var screenPosition = window.innerHeight / 2;
+  var screenPosition = window.innerHeight / 3;
 
 
   if(introPosition < screenPosition){
@@ -100,6 +99,3 @@ function bgChanger (){
 }
 
 window.addEventListener("scroll", bgChanger);
-
-
-
