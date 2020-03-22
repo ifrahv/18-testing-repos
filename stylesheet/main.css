@@ -22,7 +22,7 @@ html{
 }
 
 .cv-page{
-
+  
 position: relative;
 z-index: 2;
 cursor: pointer
@@ -34,13 +34,13 @@ cursor: pointer
 /*--------------Navigation for all websites-------------*/
 /*--------------CODE FROM https://codepen.io/mutedblues/pen/MmPNPG-------------*/
 .header {
-  border-bottom: rgba(49, 49, 49, 0.363) 1px solid;
+  border-bottom: rgba(211, 211, 211, 0.363) 1px solid;
   position: fixed;
   width: 100%;
   z-index: 2;
   top: 0px;
   overflow: visible;
-  background-color: #ffffffb2;
+  background-color: #ffffff1e;
 }
 
 .header ul {
@@ -58,7 +58,7 @@ li {
 }
 
 a {
-  color: #131313;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -90,7 +90,7 @@ li a:hover:after {
   transition: all 0.25s ease;
   opacity: 0;
   content: '';
-  border: 2px solid rgb(47, 248, 228);
+  border: 2px solid rgb(0, 0, 0);
   display: block;
   position: relative;
   z-index: -1;
@@ -251,43 +251,19 @@ li a:hover:after {
   overflow: auto;
   min-height: 100%;
   padding: 14rem 0;
-
   position: relative;
 }
 
 .hero-content {
-  position: relative;
-  top: 50%;
-  bottom: 50%;
-  width: 100%;
-  text-align: center;
+  margin: 0px 60px;
+  font-size: 50px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 55px;
   letter-spacing: 2px;
 
 }
 
-.red {
-  color: rgb(255, 0, 30);
-  text-transform: uppercase;
-  font-style: normal;
-
-}
-
-.red:hover {
-  color: rgb(47, 248, 228);
-  transition: ease-in-out 0.9s;
-}
-
-.ifrah1 {
-  color: rgb(19, 19, 19);
-  letter-spacing: 2px;
-}
-
-
-.hometext {
-  height: 50px;
-  text-align: center;
-  font-size: 32px;
-}
 
 /*--inspired by https://codepen.io/pugson/pen/EwmKJp----*/
 .text-highlight {
