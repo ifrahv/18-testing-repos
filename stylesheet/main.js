@@ -103,12 +103,3 @@ window.addEventListener("scroll", bgChanger);
 
 
 
-// text distortion  //
-
-///ONLOAD
-var ready = (callback) => {
-  if (document.readyState != "loading") callback();
-  else document.addEventListener("DOMContentLoaded", callback);
-}
-
-ready(() => {  });
