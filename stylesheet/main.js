@@ -73,7 +73,7 @@ window.onload = function(){
 
 
 function scrollAppear(){
-  var introText = document.querySelector('.about-me');
+  var introText = document.querySelector('.about-meo');
   var introPosition = introText.getBoundingClientRect().top;
   var screenPosition = window.innerHeight / 2;
 
@@ -100,3 +100,15 @@ function bgChanger (){
 }
 
 window.addEventListener("scroll", bgChanger);
+
+
+
+// text distortion  //
+
+///ONLOAD
+var ready = (callback) => {
+  if (document.readyState != "loading") callback();
+  else document.addEventListener("DOMContentLoaded", callback);
+}
+
+ready(() => {  });
