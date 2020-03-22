@@ -40,7 +40,6 @@ cursor: pointer
   z-index: 2;
   top: 0px;
   overflow: visible;
-  background-color: #ffffff1e;
 }
 
 .header ul {
@@ -111,7 +110,7 @@ li a:hover:after {
   margin-top: 12px;
   display: block;
   float: left;
-  color: #E71D36;
+  color: rgb(0, 66, 151);;
   font-size: 2em;
   padding: 10px 20px;
   text-decoration: none;
@@ -119,7 +118,7 @@ li a:hover:after {
 }
 
 .header .logo:hover {
-  color: rgb(47, 248, 228);
+  color: rgb(255, 255, 255);
 
 }
 
@@ -209,25 +208,28 @@ li a:hover:after {
 /*-------More about me button------*/
 /*--------CODE FROM https://codepen.io/lookingforsome/pen/oLJkoO-----*/
 .svg-wrapper {
-  margin-top: 98px;
+  margin-top: 8px;
+
 }
 
 .shape {
   stroke-dasharray: 141 539;
   stroke-dashoffset: -473.5;
-  stroke-width: 15px;
+  stroke-width: 20px;
   fill: transparent;
-  stroke: rgb(47, 248, 228);
+  stroke: rgb(1, 91, 209);
   transition: stroke-width 2s, stroke-dashoffset 2s, stroke-dasharray 2s;
 }
 
 .text {
-  font-weight: 200;
+  font-weight: 300;
+color: rgb(1, 91, 209);
   font-size: 22px;
-  line-height: 32px;
+  line-height: 3px;
   letter-spacing: 8px;
-  color: rgb(219, 34, 34);
   top: -48px;
+  left: 38px;
+  stroke: rgb(1, 91, 209);
   position: relative;
 
 }
@@ -277,8 +279,8 @@ li a:hover:after {
   width: 580px;
   height: 38px;
   top: 482px;
-  margin-left: 30rem;
   position: absolute;
+  margin-left: 30rem;
   z-index: -1;
 
 
