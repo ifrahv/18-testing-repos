@@ -75,36 +75,7 @@ a {
 }
 
 
-.header li a:hover {
-  transform: rotate(-2.2deg) scale(1.02);
-}
 
-.header li a:hover:before,
-li a:hover:after {
-  opacity: 1;
-  width: 12.5px;
-}
-
-.header .mc a:before,
-.mc a:after {
-  transition: all 0.25s ease;
-  opacity: 0;
-  content: '';
-  border: 2px solid rgb(0, 0, 0);
-  display: block;
-  position: relative;
-  z-index: -1;
-  margin: auto;
-  width: 0px;
-}
-
-.header li a:before {
-  transform: rotate(120deg) translateY(-50%) translateX(-50%);
-}
-
-.header li a:after {
-  transform: rotate(-60deg) translateY(-50%) translateX(-50%);
-}
 
 /*-------Website Logo------*/
 .header .logo {
