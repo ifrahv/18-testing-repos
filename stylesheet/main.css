@@ -260,9 +260,9 @@ color: rgb(1, 91, 209);
 
   background-image:
     linear-gradient(-100deg,
-      rgb(0, 255, 234),
-      rgba(0, 253, 255, 0.8) 100%,
-      rgba(0, 251, 255, 0.25));
+      rgba(0, 26, 255, 0.15),
+      rgba(0, 26, 255, 0.8) 100%,
+      rgba(0, 26, 255, 0.25));
 }
 
 /*--------x-----End of main text-----x-------- */
