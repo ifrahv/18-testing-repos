@@ -69,7 +69,7 @@ window.onload = function(){
 
 
 
-// START OF MENU OVERLAY //
+// START OF about me fade in //
 
 function scrollAppear(){
   var introText = document.querySelector('.about-me');
