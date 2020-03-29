@@ -3,7 +3,7 @@
 //cursor variables 
 const cursor = document.querySelector('.cursor');
 const cursorinner = document.querySelector('.cursor2');
-//quieries all links within the document 
+//queries all links within the document 
 const a = document.querySelectorAll('a');
 
 //these two functions allows the circles to follow the cursor
