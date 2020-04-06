@@ -62,6 +62,11 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #001aff;
+  text-decoration: none;
+}
+
 .header .logo a:hover {
   color: rgb(255, 255, 255);
 }
