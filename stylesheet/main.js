@@ -1,10 +1,10 @@
 
 // START OF CURSOR //
+
 //cursor variables 
 const cursor = document.querySelector('.cursor');
 const cursorinner = document.querySelector('.cursor2');
-//queries all links within the document 
-const a = document.querySelectorAll('a');
+const a = document.querySelectorAll('a'); //queries all links within the document 
 
 //these two functions allows the circles to follow the cursor
 document.addEventListener('mousemove', function(e){
