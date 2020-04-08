@@ -23,7 +23,7 @@ html{
 }
 
 .cv-page{
-  background-color: #fff;
+background-color: #fff;
 position: relative;
 z-index: 2;
 cursor: pointer
