@@ -296,6 +296,12 @@ color: rgb(1, 91, 209);
   .header .menu-icon {
     display: none;
   }
+
+  body{
+    cursor: pointer;
+  }
+
+
 }
 
 
@@ -320,6 +326,10 @@ color: rgb(1, 91, 209);
 
   .hero {
     padding-top: 100px;
+  }
+
+  body{
+    cursor: pointer;
   }
 }
 
