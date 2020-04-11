@@ -103,7 +103,12 @@ window.addEventListener("scroll", bgChanger);
 
 
 
+// Menu  //
 
+function MenuToggle(){
+  var nav = document.getElementById('menu-bar');
+  
+}
 
 
 
