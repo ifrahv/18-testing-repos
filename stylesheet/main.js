@@ -110,9 +110,11 @@ const preloader = document.querySelector('.preloader');//selecting the class
 function sayHi() {
 preloader.style.opacity = '0' ;
 }
-
-setTimeout(sayHi, 7000); // this function is activated after 9000 milliseconds
-
+function disappear() {
+  preloader.style.zIndex = '-1' ;
+  }
+setTimeout(sayHi, 5000); // this function is activated after 9000 milliseconds
+setTimeout(disappear, 6000);
 
 
 

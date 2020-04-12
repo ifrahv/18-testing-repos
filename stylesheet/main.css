@@ -1435,7 +1435,7 @@ blockquote {
   opacity: 1;
   transition:opacity 2s linear;
   width: 100%;
-  z-index: 9999;
+ z-index: 9999;
 }
 
 
