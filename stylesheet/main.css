@@ -1432,7 +1432,7 @@ blockquote {
   left: 0;
   position: fixed;
   top: 0;
-  transition: opacity 0.3s linear;
+  transition: opacity 3s linear;
   width: 100%;
   z-index: 9999;
 }
