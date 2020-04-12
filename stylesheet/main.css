@@ -41,6 +41,7 @@ cursor: pointer
   z-index: 2;
   top: 0px;
   overflow: visible;
+  scroll
 }
 
 .header ul {
@@ -715,6 +716,25 @@ textarea .contact-form-text {
 
 
 
+/*---------------Scroll to the top-----------------*/
+
+#goTop {
+  position:fixed;
+  z-index:999;
+  right:0;
+  top:50%;
+  transform:translateY(-50%);
+  padding:20px;
+  color:#fff;
+  background:rgba(00,00,00,0.3);
+  border:none;
+  opacity:0;
+  transition: opacity 0.4s linear;
+}
+#goTop.is-visible {
+  opacity:1;
+}
+
 
 
 
@@ -764,6 +784,20 @@ textarea .contact-form-text {
   background: rgb(47, 248, 228,0.2);
 
 }
+
+/*---------------CV NAVIGATION-----------------*/
+
+.nav-cvpage li{
+  float:right;
+font-size: 1.8rem;
+font-weight: 300;
+
+}
+
+
+
+
+
 /*---------------CV LAYOUT-----------------*/
 .clear {
   clear: both;
@@ -1384,3 +1418,21 @@ blockquote {
 
 
 
+
+
+
+
+
+.preloader {
+  align-items: center;
+  background: rgb(23, 22, 22);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition: opacity 0.3s linear;
+  width: 100%;
+  z-index: 9999;
+}
