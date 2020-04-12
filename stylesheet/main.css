@@ -1437,3 +1437,11 @@ blockquote {
   z-index: 9999;
 }
 
+.data{
+  font-size: 45px;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  letter-spacing: 12px;
+
+}

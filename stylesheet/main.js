@@ -114,11 +114,12 @@ const fadeEffect = setInterval(() => {
     preloader.style.opacity = 1;
   }
   if (preloader.style.opacity > 0) {
-    preloader.style.opacity -= 0.1;
+    preloader.style.opacity -= 0.5;
   } else {
     clearInterval(fadeEffect);
   }
-}, 400);
+}, 900);
+
 
 
 
@@ -127,10 +128,10 @@ const fadeEffect = setInterval(() => {
 const text = baffle(".data");
 text.set({
   character : '/░█ ▓/█▒█ ░▒<░░ █░█ █░▓░▒ ▓███ ▓>░ ▓▒▒/ █▓░▒',
-  speed: 150,
+  speed: 120,
 });
 text.start();
-text.reveal(20000);
+text.reveal(4000);
 
 window.addEventListener('load', fadeEffect);
 
