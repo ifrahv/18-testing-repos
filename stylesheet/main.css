@@ -1425,14 +1425,15 @@ blockquote {
 
 .preloader {
   align-items: center;
-  background: rgb(23, 22, 22);
+  background: rgb(0, 0, 0);
   display: flex;
   height: 100vh;
   justify-content: center;
   left: 0;
   position: fixed;
   top: 0;
-  transition: opacity 3s linear;
+  transition: opacity 10s ease-out;
   width: 100%;
   z-index: 9999;
 }
+

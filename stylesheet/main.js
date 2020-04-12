@@ -104,7 +104,7 @@ window.addEventListener("scroll", bgChanger);
 
 
 
-// Menu  //
+// page loader //
 
 const preloader = document.querySelector('.preloader');
 
@@ -118,7 +118,19 @@ const fadeEffect = setInterval(() => {
   } else {
     clearInterval(fadeEffect);
   }
-}, 200);
+}, 400);
+
+
+
+
+
+const text = baffle(".data");
+text.set({
+  character : '/░█ ▓/█▒█ ░▒<░░ █░█ █░▓░▒ ▓███ ▓>░ ▓▒▒/ █▓░▒',
+  speed: 150,
+});
+text.start();
+text.reveal(20000);
 
 window.addEventListener('load', fadeEffect);
 
