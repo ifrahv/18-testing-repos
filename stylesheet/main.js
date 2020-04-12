@@ -1,6 +1,6 @@
 
 // START OF CURSOR //
-
+'use strict';
 //cursor variables 
 const cursor = document.querySelector('.cursor');
 const cursorinner = document.querySelector('.cursor2');
@@ -106,33 +106,26 @@ window.addEventListener("scroll", bgChanger);
 
 // page loader //
 
-const preloader = document.querySelector('.preloader');
+const preloader = document.querySelector('.preloader');//selecting the class
+function sayHi() {
+preloader.style.opacity = '0' ;
+}
 
-const fadeEffect = setInterval(() => {
-  // if we don't set opacity 1 in CSS, then   //it will be equaled to "", that's why we   // check it
-  if (!preloader.style.opacity) {
-    preloader.style.opacity = 1;
-  }
-  if (preloader.style.opacity > 0) {
-    preloader.style.opacity -= 0.5;
-  } else {
-    clearInterval(fadeEffect);
-  }
-}, 900);
+setTimeout(sayHi, 7000); // this function is activated after 9000 milliseconds
 
 
 
 
-
+//text distortion
 
 const text = baffle(".data");
 text.set({
   character : '/░█ ▓/█▒█ ░▒<░░ █░█ █░▓░▒ ▓███ ▓>░ ▓▒▒/ █▓░▒',
-  speed: 120,
+  speed: 100,
 });
 text.start();
-text.reveal(4000);
+text.reveal(9000);
 
-window.addEventListener('load', fadeEffect);
+
 
 
