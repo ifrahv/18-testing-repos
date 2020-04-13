@@ -133,23 +133,8 @@ text.reveal(9000);
 
 // Mobile navigation //
 
-
-
-
-const button = document.querySelector('.button a');
-const overlay = document.querySelector('.overlay');
-
-function fadeIn () {
-  overlay.style.transition= '2s fadeIn';
+const navSlide = () => {
+  const burger = document.querySelector('.burger');
+  const burger = document.querySelector('.burger');
+  const burger = document.querySelector('.burger');
 }
-
-function toggleNav() {
-  burger.classList.toggle('btn-open');
-  burger.classList.toggle('btn-close');
-  nav.classList.toggle('wrap');
-}
-
-
-burger.addEventListener('click', function() {
-  toggleNav();
-});
