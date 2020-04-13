@@ -44,14 +44,19 @@ a{
   top: 0px;
   position: fixed;
   transition: 1s;
+  background:rgba(46, 214, 197, 0.918);
 }
 
 .header.sticky{
-  background: #fff;
+  background: rgba(255, 255, 255, 0.918);
 }
 
 .header.sticky ul li a{
  color: #000;
+}
+
+.logo .sticky{
+  color: #000;
 }
 
 .header ul {
@@ -79,9 +84,10 @@ a:hover {
 .header li a {
   color: #ffffff;
   display: block;
-  padding: 20px 20px;
+  padding: 20px 10px;
   text-decoration: none;
   list-style-type: none;
+  font-family: 'oswald', cursive;
   opacity: 1;
   transition: all 0.3s ease;
 }
@@ -94,16 +100,16 @@ a:hover {
   margin-top: 12px;
   display: block;
   float: left;
-  color: rgb(255, 255, 255);;
-  font-size: 2.2em;
-  font-family: 'neonavy';
+  color: rgb(0, 23, 156);;
+  font-size: 2.3em;
+  font-family: 'Baloo Paaji 2', cursive;
   padding: 10px 20px;
   text-decoration: none;
   transition: ease-in 0.2s;
 }
 
 .header .logo:hover {
-  color: rgb(0, 25, 168);
+  color: rgb(0, 8, 53);
 
 }
 
