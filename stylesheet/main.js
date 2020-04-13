@@ -45,6 +45,12 @@ a.forEach(item => {
 // END OF CURSOR //
 
 
+// START OF header  //
+window.addEventListener('scroll', function (){
+  let header = document.querySelector('header');
+  header.classList.toggle('sticky', window.scrollY > 400);
+});
+
 
 
 // START OF PORTFOLIO TEXT FADE IN //
@@ -133,8 +139,3 @@ text.reveal(9000);
 
 // Mobile navigation //
 
-const navSlide = () => {
-  const burger = document.querySelector('.burger');
-  const burger = document.querySelector('.burger');
-  const burger = document.querySelector('.burger');
-}

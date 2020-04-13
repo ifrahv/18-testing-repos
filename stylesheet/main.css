@@ -29,53 +29,59 @@ z-index: 2;
 cursor: pointer
 }
 
-
+a{
+  color: #000;
+  text-decoration: none;
+}
 
 
 /*--------------Navigation for all websites-------------*/
 /*--------------CODE FROM https://codepen.io/mutedblues/pen/MmPNPG-------------*/
 .header {
   border-bottom: rgba(211, 211, 211, 0.363) 1px solid;
-  position: fixed;
   width: 100%;
   z-index: 2;
   top: 0px;
-  overflow: visible;
+  position: fixed;
+  transition: 1s;
+}
+
+.header.sticky{
+  background: #fff;
+}
+
+.header.sticky ul li a{
+ color: #000;
 }
 
 .header ul {
-  margin-top: 12px;
-  padding: 0;
+  margin: 12px 70px;
   list-style: none;
   overflow: hidden;
   float: right;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 22px;
   list-style-type: none;
 }
 
 
-li {
+.header li  {
   display: inline-block;
-  list-style-type: none;
-}
-
-a {
-  color: #000000;
-  text-decoration: none;
 }
 
 a:hover {
-  color: #001aff;
+  color: #2335d6;
   text-decoration: none;
 }
 
-.header .logo a:hover {
-  color: rgb(255, 255, 255);
-}
 
 .header li a {
+  color: #ffffff;
   display: block;
   padding: 20px 20px;
   text-decoration: none;
+  list-style-type: none;
   opacity: 1;
   transition: all 0.3s ease;
 }
@@ -88,15 +94,16 @@ a:hover {
   margin-top: 12px;
   display: block;
   float: left;
-  color: rgb(0, 66, 151);;
-  font-size: 2em;
+  color: rgb(255, 255, 255);;
+  font-size: 2.2em;
+  font-family: 'neonavy';
   padding: 10px 20px;
   text-decoration: none;
   transition: ease-in 0.2s;
 }
 
 .header .logo:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 25, 168);
 
 }
 
