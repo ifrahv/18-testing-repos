@@ -1,0 +1,74 @@
+.header .logo {
+    margin-top: 12px;
+    display: block;
+    float: left;
+    color: rgb(0, 23, 156);;
+    font-size: 2.3em;
+    font-family: 'Baloo Paaji 2', cursive;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: ease-in 0.2s;
+  }
+  
+  .header .logo:hover {
+    color: rgb(0, 8, 53);
+  
+  }
+
+
+
+  .header {
+    border-bottom: rgba(211, 211, 211, 0.363) 1px solid;
+    width: 100%;
+    z-index: 2;
+    top: 0px;
+    position: fixed;
+    transition: 1s;
+  
+  }
+  
+  .header.sticky{
+    background: rgba(255, 255, 255, 0.918);
+  }
+  
+  .header.sticky ul li a{
+   color: #000;
+  }
+  
+  .logo .sticky{
+    color: #000;
+  }
+  
+  .header ul {
+    margin: 12px 10px;
+    list-style: none;
+    overflow: hidden;
+    float: right;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 22px;
+    list-style-type: none;
+  }
+  
+  
+  .header li  {
+    display: inline-block;
+  }
+  
+  a:hover { //
+    color: #2335d6;
+    text-decoration: none;
+  }
+  
+  
+  .header li a {
+    color: #ffffff;
+    display: block;
+    padding: 20px 10px;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'oswald', cursive;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+  
