@@ -139,4 +139,16 @@ text.reveal(9000);
 
 // Mobile navigation //
 
+const menuIcon = document.querySelector('.hamburger-menu');
+const navbar = document.querySelector('.navbar');
+const menuText = document.querySelector('.menu-on');
+
+menuIcon.addEventListener('click', () => {
+navbar.classList.toggle('change');
+});
+
+
+
+
+
 
