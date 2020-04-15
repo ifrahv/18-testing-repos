@@ -1,20 +1,19 @@
-
 // START OF CURSOR //
-'use strict';
+
 //cursor variables 
 const cursor = document.querySelector('.cursor');
 const cursorinner = document.querySelector('.cursor2');
 const a = document.querySelectorAll('a'); //queries all links within the document 
 
 //these two functions allows the circles to follow the cursor
-document.addEventListener('mousemove', function(e){
+document.addEventListener('mousemove', function (e) {
   let x = e.clientX;
   let y = e.clientY;
   cursor.style.left = x + "px";
   cursor.style.top = y + "px";
 });
 
-document.addEventListener('mousemove', function(e){
+document.addEventListener('mousemove', function (e) {
   let x = e.clientX;
   let y = e.clientY;
   cursorinner.style.left = x + 'px';
@@ -22,13 +21,13 @@ document.addEventListener('mousemove', function(e){
 });
 
 //when the cursor is clicked the hover is added
-document.addEventListener('mousedown', function(){
+document.addEventListener('mousedown', function () {
   cursor.classList.add('click');
   cursorinner.classList.add('cursorinnerhover')
 });
 
 //when the cursor is clicked the hover is removed
-document.addEventListener('mouseup', function(){
+document.addEventListener('mouseup', function () {
   cursor.classList.remove('click')
   cursorinner.classList.remove('cursorinnerhover')
 });
@@ -46,7 +45,7 @@ a.forEach(item => {
 
 
 // START OF header  //
-window.addEventListener('scroll', function (){
+window.addEventListener('scroll', function () {
   let header = document.querySelector('header');
   header.classList.toggle('sticky', window.scrollY > 400);
 });
@@ -54,18 +53,18 @@ window.addEventListener('scroll', function (){
 
 
 // START OF PORTFOLIO TEXT FADE IN //
-window.onload = function(){
+window.onload = function () {
   const EFFECT = document.querySelector(".portfolio-title");
 
   window.addEventListener('scroll', scrollEffect);
 
-  function scrollEffect () {
-    if(window.scrollY>500) {
+  function scrollEffect() {
+    if (window.scrollY > 500) {
       EFFECT.style.opacity = '1';
       EFFECT.style.transform = 'translateY(-20px)';
       EFFECT.style.transition = '1s ease-in-out';
 
-    } else{
+    } else {
       EFFECT.style.opacity = '0';
       EFFECT.style.transform = 'translateY(0px)';
     }
@@ -77,30 +76,30 @@ window.onload = function(){
 
 // START OF about me fade in //
 
-function scrollAppear(){
+function scrollAppear() {
   var introText = document.querySelector('.about-me');
   var introPosition = introText.getBoundingClientRect().top;
   var screenPosition = window.innerHeight / 3;
 
 
-  if(introPosition < screenPosition){
+  if (introPosition < screenPosition) {
     introText.classList.add('about-appear');
-  }else{
+  } else {
     introText.classList.remove('about-appear');
   }
 }
 
-window.addEventListener('scroll',scrollAppear);
+window.addEventListener('scroll', scrollAppear);
 
 
 
 // background overlay  and scroll to top//
 
 
-function bgChanger (){
-  if(this.scrollY > this.innerHeight / 2){
+function bgChanger() {
+  if (this.scrollY > this.innerHeight / 2) {
     document.body.classList.add('bg-active');
-  }else{
+  } else {
     document.body.classList.remove('bg-active');
   }
 }
@@ -112,13 +111,14 @@ window.addEventListener("scroll", bgChanger);
 
 // page loader //
 
-const preloader = document.querySelector('.preloader');//selecting the class
+const preloader = document.querySelector('.preloader'); //selecting the class
 function sayHi() {
-preloader.style.opacity = '0' ;
+  preloader.style.opacity = '0';
 }
+
 function disappear() {
-  preloader.style.zIndex = '-1' ;
-  }
+  preloader.style.zIndex = '-1';
+}
 setTimeout(sayHi, 5000); // this function is activated after 9000 milliseconds
 setTimeout(disappear, 6000);
 
@@ -128,7 +128,7 @@ setTimeout(disappear, 6000);
 
 const text = baffle(".data");
 text.set({
-  character : '/░█ ▓/█▒█ ░▒<░░ █░█ █░▓░▒ ▓███ ▓>░ ▓▒▒/ █▓░▒',
+  character: '/░█ ▓/█▒█ ░▒<░░ █░█ █░▓░▒ ▓███ ▓>░ ▓▒▒/ █▓░▒',
   speed: 100,
 });
 text.start();
@@ -145,7 +145,10 @@ const menuText = document.querySelector('.menu-on');
 const menuLink = document.querySelector('.nav-link');
 
 menuIcon.addEventListener('click', () => {
-navbar.classList.toggle('change');
+  navbar.classList.toggle('change');
 });
 
-
+document.addEventListener('mousedown', function () {
+  cursor.classList.add('click');
+  navbar.classList.remove('change');
+});

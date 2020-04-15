@@ -4,108 +4,116 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+
+}
+
 body {
   box-sizing: border-box;
   overflow-x: hidden;
-  background-color: rgba(46, 214, 197, 0.918);
+  background-color: rgba(17, 233, 211, 0.918);
   Margin: 0%;
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
   text-decoration: none;
   cursor: none;
   transition: all 0.5s ease;
- 
-}
-html{
-  scroll-behavior:smooth;
-
 
 }
 
-.cv-page{
-background-color: #fff;
-position: relative;
-z-index: 2;
-cursor: pointer
-}
-
-a{
+a {
   color: #000;
   text-decoration: none;
   list-style-type: none;
 }
 
 
+/*-------------- Preloader -------------*/
+
+.preloader {
+  align-items: center;
+  background: rgb(0, 0, 0);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  opacity: 1;
+  transition: opacity 2s linear;
+  width: 100%;
+  z-index: 9999;
+}
+
+
+
+.data {
+  font-size: 45px;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  letter-spacing: 12px;
+
+}
+
+/*-------------- end of preloader -------------*/
+
 /*--------------Navigation for all websites-------------*/
 /*--------------CODE FROM https://codepen.io/mutedblues/pen/MmPNPG-------------*/
 .header {
-  border-bottom: rgba(211, 211, 211, 0.363) 1px solid;
+  border-bottom: rgba(255, 255, 255, 0.363) 1px solid;
   width: 100%;
-  z-index: 9999;
+  background-color: rgba(17, 233, 211, 0.918);
+  z-index: 2;
   top: 0px;
   position: fixed;
   transition: 1s;
 
 }
 
-.header.sticky{
-  background: rgba(255, 255, 255, 0.918);
-}
-
-.header.sticky ul li a{
- color: #000;
-}
-
-.logo .sticky{
-  color: #000;
-}
-
 .header ul {
-  margin: 12px 10px;
+  margin: 15px 20px;
   list-style: none;
   overflow: hidden;
   float: right;
-  letter-spacing: 3px;
-  font-weight: 400;
-  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 21px;
   list-style-type: none;
 }
 
-
-.header li  {
+.header li {
   display: inline-block;
 }
 
-a:hover { 
-  color: #2335d6;
-  text-decoration: none;
-}
-
-
 .header li a {
-  color: #e60000;
+  color: rgb(255, 255, 255);
   display: block;
   padding: 20px 10px;
-  text-decoration: none;
-  list-style-type: none;
+
   font-family: 'oswald', cursive;
   opacity: 1;
   transition: all 0.3s ease;
 }
 
-.hamburger-menu{
-  width: 35px;
-  height:30px;
-  position: fixed;
-  top: 50px;
-  right: 50px;
-  cursor: pointer;
-  display: none;
-  flex-direction: column;
-  justify-content: space-around;
-  z-index: 2;
+.header li a:hover {
+  color: rgb(15, 0, 226);
+
 }
 
+/*------- color change when scroll------*/
+.header.sticky {
+  background: rgba(255, 255, 255, 0.918);
+}
+
+.header.sticky ul li a {
+  color: #000;
+}
+
+.header.sticky .logo {
+  color: rgb(0, 0, 0);
+}
 
 
 /*-------Website Logo------*/
@@ -113,24 +121,41 @@ a:hover {
   margin-top: 12px;
   display: block;
   float: left;
-  color: rgb(0, 23, 156);;
+  color: rgb(255, 255, 255);
+  ;
   font-size: 2.3em;
-  font-family: 'Baloo Paaji 2', cursive;
+  font-family: 'oswald', cursive;
   padding: 10px 20px;
   text-decoration: none;
   transition: ease-in 0.2s;
 }
 
 .header .logo:hover {
-  color: rgb(0, 8, 53);
+  color: rgb(0, 52, 224);
 
 }
 
 /*------------START OF MOBILE MENU------------- */
+.hamburger-menu {
+  width: 34px;
+  height: 29px;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 2;
+}
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
 
-  .navbar{
+  .header li a:hover {
+    color: white;
+  }
+
+  .navbar {
     width: 100%;
     height: 100%;
     background-color: rgb(48, 10, 219);
@@ -142,84 +167,83 @@ a:hover {
     align-items: center;
     transition: right .8s cubic-bezier(1, 0, 0, 1);
     overflow: hidden;
-    z-index:2;
-}
-.change {
+    z-index: 2;
+  }
+
+  .change {
     right: 0;
-}
+  }
 
-.hamburger-menu{
-
+  .hamburger-menu {
     display: flex;
-    
-}
+  }
 
-.line{
+  .line {
     width: 100%;
     height: 3px;
     background-color: rgb(0, 0, 0);
-   transition: all 1.5s;
-}
+    transition: all 1.5s;
+  }
 
-.change .line-1 {
+  .change .line-1 {
     transform: rotateZ(-405deg) translate(-8px, 6px);
-}
+  }
 
-.change .line-2 {
-opacity: 0;
-}
+  .change .line-2 {
+    opacity: 0;
+  }
 
-.change .line-3 {
+  .change .line-3 {
     transform: rotateZ(405deg) translate(-8px, -6px);
-}
+  }
 
-.nav-list{
+  .nav-list {
     text-align: center;
-}
+  }
 
-.nav-item{
+  .nav-item {
     list-style: none;
-    margin: 48px;
-}
+    margin: 45px;
+  }
 
-.nav-link{
+  .nav-link {
     text-decoration: none;
-    font-size:32px;
+    font-size: 33px;
     color: white;
     font-weight: 300;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     text-transform: uppercase;
     position: relative;
     overflow: hidden;
-}
+  }
 
 
-.menu__item-name::before,
-.menu__item-name::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #000000;
-	transform: translate3d(-100%,0,0) translate3d(-40px,0,0);
-	transition: transform 1.1s;
-	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
-}
+  .menu__item-name::before,
+  .menu__item-name::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #181818;
+    transform: translate3d(-100%, 0, 0) translate3d(-40px, 0, 0);
+    transition: transform 1.1s;
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  }
 
- .nav-link:hover .menu__item-name::before {
-	transform: translate3d(100%,0,0) translate3d(40px,0,0);
-}
+  .nav-link:hover .menu__item-name::before {
+    transform: translate3d(100%, 0, 0) translate3d(40px, 0, 0);
+  }
 
-.nav-link:hover .menu__item-name::after {
-	transform: translate3d(0,0,0);
-}
+  .nav-link:hover .menu__item-name::after {
+    transform: translate3d(0, 0, 0);
+  }
 
-.menu__item-name::after {
-	top: calc(50% - 2px);
-	height: 4px;
-}
+  .menu__item-name::after {
+    top: calc(50% - 2px);
+    height: 4px;
+  }
 
 
 }
@@ -230,7 +254,24 @@ opacity: 0;
 
 /*--------------------Start of home page--------------------*/
 
+/* background colour */
 
+.bg-active {
+  background-color: #fff;
+}
+
+/* about page text fade in*/
+
+.about-me {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s all ease-in-out;
+}
+
+.about-appear {
+  opacity: 1;
+  transform: translateY(0px);
+}
 
 /*-------More about me button------*/
 /*--------CODE FROM https://codepen.io/lookingforsome/pen/oLJkoO-----*/
@@ -250,7 +291,7 @@ opacity: 0;
 
 .text {
   font-weight: 300;
-color: rgb(1, 91, 209);
+  color: rgb(1, 91, 209);
   font-size: 22px;
   line-height: 3px;
   letter-spacing: 8px;
@@ -267,6 +308,7 @@ color: rgb(1, 91, 209);
   stroke-dashoffset: 0;
   stroke-dasharray: 760;
 }
+
 /*----x---More about me button---x---*/
 
 
@@ -283,11 +325,13 @@ color: rgb(1, 91, 209);
   position: relative;
 }
 
+/*-- hello text --*/
 .ifrah1{
   font-size: 100px;
   font-weight: 900;
   letter-spacing: 8px;
 }
+
 
 .hero-content {
   margin: 0px 60px;
@@ -295,9 +339,7 @@ color: rgb(1, 91, 209);
   font-weight: 600;
   color: #ffffff;
   line-height: 8rem;
-  letter-spacing: 2px;
-
-
+  letter-spacing: 4px;
 }
 
 
@@ -310,14 +352,11 @@ color: rgb(1, 91, 209);
   margin-left: 30rem;
   z-index: -1;
 
-
-  
-
   background-image:
     linear-gradient(-100deg,
       rgba(0, 26, 255, 0.15),
-      rgba(0, 26, 255, 0.8) 100%,
-      rgba(0, 26, 255, 0.25));
+      rgb(0, 26, 255) 100%,
+      rgba(0, 26, 255, 0.438));
 }
 
 /*--------x-----End of main text-----x-------- */
@@ -325,197 +364,60 @@ color: rgb(1, 91, 209);
 
 /*---------------------RESPONSIVENESS/MEDIA QUERIES FOR HOME PAGE--------------------------*/
 
-/*-------------NAVIGATION------------- */
-
-
-
 /*-------------HOME PAGE CONTENT------------- */
 
 @media only screen and (max-width: 375px) {
-  .Iam .innerIam {
-    float: left;
-    font-size: 30%;
-    margin-left: -40px;
+
+  .header .logo{
+    font-size: 2rem;
   }
 
-  .hometext {
-    font-size: 18px;
-    padding: 10px 10px 0 0;
+  .ifrah1{
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-align: center;
   }
-
-  .svg-wrapper {
-    margin-bottom: -100px;
-
+  .hero-content {
+    font-size: 28px;
+    line-height: 4rem;
+    letter-spacing: 2px;
+    text-align: center;
   }
-
+  .shape{
+    display: none;
+  }
+  
+  .text {
+    margin-top:60px;
+    margin-left: -70px;
+    color: rgb(1, 91, 209);
+    font-size: 22px;
+    line-height: 3px;
+    letter-spacing: 4px;
+    stroke: rgb(1, 91, 209);
+    position: relative;
+    border: #000 solid 4px;
+    padding: 20px 30px;
+    border-radius: 20px;
+    text-align: center; 
+    justify-content: center;
+  }
   .hero {
-    padding-top: 100px;
+    padding-top: 150px;
+  }
+  .text-highlight {
+    width: 250px;
+    height: 14px;
+    top: 420px;
+    margin: 1px;
+    position: absolute;
+    background:blue
   }
 
-  body{
-    cursor: pointer;
-  }
 }
 
 /*-----------X----------END OF RESPONSIVENESS/MEDIA QUERIES FOR HOME PAGE--------X------------------*/
-
-
-
-
-
-
-
-
-/*---------------START OF CONTACT PAGE -----------------*/
-/*---------CONTACT FORM INSPIRED BY https://codepen.io/ssbalakumar/pen/uzDIA----------------------*/
-
-/*--PAGE LAYOUT----*/
-.contact-section {
-  max-width: 1335px;
-  margin: 0 auto;
-  overflow: auto;
-  padding-bottom: 10px;
-  min-height: 100%;
-}
-
-/*--FONT STYLING----*/
-.contact-section h1 {
-  text-align: center;
-  color: rgb(5, 4, 4);
-  padding-top: 160px;
-  letter-spacing: 5px;
-  font-weight: 300;
-  font-size: 60px;
-  text-transform: uppercase;
-}
-
-.contact-section h2 {
-  text-align: center;
-  font-size: 24px;
-margin-top: -30px;
-  font-weight: 200;
-  color: rgb(0, 4, 255);
-  text-transform: none;
-}
-
-
-.border {
-  width: 100px;
-  height: 4px;
-  background-color: rgb(0, 0, 0);
-  margin: 30px auto;
-
-}
-
-/*--CONTACT FORM----*/
-.contact-form {
-
-  max-width: 600px;
-  margin: auto;
-  padding: 0 10px;
-  overflow: hidden;
-
-}
-
-.contact-form-text {
-  display: block;
-  width: 55%;
-  box-sizing: border-box;
-  font-size: 24px;
-  margin:0 auto;
-  margin-top: 20px;
-  background: rgba(231, 221, 221, 0.1);
-  border: 1px black solid;
-  padding: 20px 40px;
-  outline: none;
-  color: rgb(255, 0, 0);
-  transition: 0.5s;
-}
-
-.contact-form-text:hover {
-  box-shadow: 0 0 10px 4px rgba(231, 221, 221, 0.61);
-}
-
-textarea .contact-form-text {
-  resize: none;
-  height: 120px;
-
-}
-
-/*--SEND BUTTON----*/
-/*--CODE FROM https://codepen.io/bobbykorec/pen/qOGbyr----*/
-.send-button {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 15%;
-  box-sizing: border-box;
-  border: 0;
-  margin-top: 40px;
-  height: 40px;
-  overflow: hidden;
-  transition: all .2s ease-in-out;
-  background-color: #04080b;
-  margin-bottom: 100px;
-
-
-}
-
-.button {
-  padding-top: 7px;
-  width: 100%;
-  height: 34px;
-  transition: all .2s ease-in-out;
-  color: white;
-  font-size: 22px;
-}
-
-.send-text {
-  display: block;
-  margin-top: 13px;
-  font: 200 24px 'Lato', sans-serif;
-  letter-spacing: 3px;
-  color: white;
-}
-
-.button:hover {
-  transform: translate3d(0px, -40px, 0px);
-}
-
-
-/*---------------------RESPONSIVENESS/MEDIA QUERIES FOR CONTACT PAGE--------------------------*/
-@media only screen and (max-width: 375px) {
-
-  .contact-section h1 {
-    font-size: 40px;
-    padding: 10px 10px 0 0;
-  }
-
-  .contact-section {
-    padding-top: 90px;
-  }
-
-}
-
-/*----------X-----------END OF RESPONSIVENESS/MEDIA QUERIES FOR CONTACT PAGE--------X------------------*/
-
-
-
-
-
-/*-------------X-------END OF CONTACT PAGE ----------X-------------*/
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -553,7 +455,7 @@ textarea .contact-form-text {
 }
 
 .project-name {
-  color: #E71D36;
+  color: rgb(29, 76, 231);
 }
 
 .project-name:hover {
@@ -631,9 +533,10 @@ textarea .contact-form-text {
   background-position: center;
 }
 
-.grid-image-top{
+.grid-image-top {
   background: rgb(47, 248, 228);
 }
+
 .grid-item-content {
   padding: 0 17px 17px 17px;
 }
@@ -703,8 +606,8 @@ textarea .contact-form-text {
   }
 
   .portfolio-title p {
-    font-size: 16px;
-    width: 87%;
+    font-size: 20px;
+    width: 90%;
   }
 
 }
@@ -739,28 +642,6 @@ textarea .contact-form-text {
 
 
 
-/*---------------Scroll to the top-----------------*/
-
-#goTop {
-  position:fixed;
-  z-index:999;
-  right:0;
-  top:50%;
-  transform:translateY(-50%);
-  padding:20px;
-  color:#fff;
-  background:rgba(00,00,00,0.3);
-  border:none;
-  opacity:0;
-  transition: opacity 0.4s linear;
-}
-#goTop.is-visible {
-  opacity:1;
-}
-
-
-
-
 /*---------------START OF CV PAGE -----------------*/
 
 
@@ -769,7 +650,7 @@ textarea .contact-form-text {
 .about-me h1 {
   color: rgb(17, 16, 16);
   font-size: 50px;
- 
+
 }
 
 .about-me p {
@@ -777,15 +658,15 @@ textarea .contact-form-text {
   font-size: 22px;
   font-weight: 300;
   text-transform: none;
-  
+
 
 }
 
 .about-me {
- margin:0 auto;
- width: 60%;
- padding-top: 300px;
- padding-bottom: 200px;
+  margin: 0 auto;
+  width: 60%;
+  padding-top: 300px;
+  padding-bottom: 200px;
 }
 
 /*---------------ABOUT ME CV BUTTON -----------------*/
@@ -798,23 +679,31 @@ textarea .contact-form-text {
 }
 
 
-.cv-button{
+.cv-button {
   margin-top: 50px;
- 
+
 }
 
-.cv:hover{
-  background: rgb(47, 248, 228,0.2);
+.cv:hover {
+  background: rgb(47, 248, 228, 0.2);
 
 }
 
 /*---------------CV NAVIGATION-----------------*/
 
-.nav-cvpage li{
-  float:right;
-font-size: 1.8rem;
-font-weight: 300;
+.nav-cvpage li {
+  float: right;
+  font-size: 1.8rem;
+  font-weight: 300;
 
+}
+
+
+.cv-page {
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+  cursor: pointer
 }
 
 
@@ -1246,6 +1135,145 @@ blockquote {
 /*-------X--------------END OF RESPONSIVENESS/MEDIA QUERIES FOR CV PAGE----------------X----------*/
 
 
+/*---------------START OF CONTACT PAGE -----------------*/
+/*---------CONTACT FORM INSPIRED BY https://codepen.io/ssbalakumar/pen/uzDIA----------------------*/
+
+/*--PAGE LAYOUT----*/
+.contact-section {
+  max-width: 1335px;
+  margin: 0 auto;
+  overflow: auto;
+  padding-bottom: 10px;
+  min-height: 100%;
+}
+
+/*--FONT STYLING----*/
+.contact-section h1 {
+  text-align: center;
+  color: rgb(5, 4, 4);
+  padding-top: 160px;
+  letter-spacing: 5px;
+  font-weight: 300;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+.contact-section h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-top: -30px;
+  font-weight: 200;
+  color: rgb(0, 4, 255);
+  text-transform: none;
+}
+
+
+.border {
+  width: 100px;
+  height: 4px;
+  background-color: rgb(0, 0, 0);
+  margin: 30px auto;
+
+}
+
+/*--CONTACT FORM----*/
+.contact-form {
+
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+
+}
+
+.contact-form-text {
+  display: block;
+  width: 55%;
+  box-sizing: border-box;
+  font-size: 24px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background: rgba(231, 221, 221, 0.1);
+  border: 1px black solid;
+  padding: 20px 40px;
+  outline: none;
+  color: rgb(255, 0, 0);
+  transition: 0.5s;
+}
+
+.contact-form-text:hover {
+  box-shadow: 0 0 10px 4px rgba(231, 221, 221, 0.61);
+}
+
+textarea .contact-form-text {
+  resize: none;
+  height: 120px;
+
+}
+
+/*--SEND BUTTON----*/
+/*--CODE FROM https://codepen.io/bobbykorec/pen/qOGbyr----*/
+.send-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  box-sizing: border-box;
+  border: 0;
+  margin-top: 40px;
+  height: 40px;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+  background-color: #04080b;
+  margin-bottom: 100px;
+
+
+}
+
+.button {
+  padding-top: 7px;
+  width: 100%;
+  height: 34px;
+  transition: all .2s ease-in-out;
+  color: white;
+  font-size: 22px;
+}
+
+.send-text {
+  display: block;
+  margin-top: 13px;
+  font: 200 24px 'Lato', sans-serif;
+  letter-spacing: 3px;
+  color: white;
+}
+
+.button:hover {
+  transform: translate3d(0px, -40px, 0px);
+}
+
+
+/*---------------------RESPONSIVENESS/MEDIA QUERIES FOR CONTACT PAGE--------------------------*/
+@media only screen and (max-width: 375px) {
+
+  .contact-section h1 {
+    font-size: 40px;
+    padding: 10px 10px 0 0;
+  }
+
+  .contact-section {
+    padding-top: 90px;
+  }
+
+}
+
+/*----------X-----------END OF RESPONSIVENESS/MEDIA QUERIES FOR CONTACT PAGE--------X------------------*/
+
+
+
+
+
+/*-------------X-------END OF CONTACT PAGE ----------X-------------*/
+
 
 
 
@@ -1259,6 +1287,7 @@ blockquote {
   color: #737373;
   border-top: 2px solid grey;
   margin-top: 20px;
+
 }
 
 
@@ -1283,7 +1312,7 @@ blockquote {
 /* COPYRIGHT TEXT */
 .copyright-text {
   margin: 0;
-  padding-left: 40px;
+
 
 }
 
@@ -1293,43 +1322,35 @@ blockquote {
 
 @media (max-width:991px) {
   .site-footer [class^=col-] {
-    margin-bottom: 30px
+    margin-bottom: 35px
   }
 }
 
 @media (max-width:767px) {
-  .site-footer {
-    padding-bottom: 0
-  }
 
   .site-footer .copyright-text,
   .site-footer .social-icons {
     text-align: center;
     font-size: 14px;
+
   }
 }
 
 .social-icons {
-  padding-left: 0;
-  margin-bottom: 0;
   padding-right: 10px;
-  list-style: none
+  list-style: none;
 }
 
 .social-icons li {
   display: inline-block;
-  margin-bottom: 4px;
   padding-right: 10px;
 }
 
 .social-icons a {
   background-color: rgb(187, 36, 36);
-  color: #818a91;
   font-size: 30px;
   display: inline-block;
-  line-height: 44px;
-  width: 44px;
-  height: 44px;
+
   text-align: center;
   margin-right: 8px;
   border-radius: 100%;
@@ -1361,13 +1382,7 @@ blockquote {
   background-color: #131313
 }
 
-@media (max-width:767px) {
-  .social-icons li.title {
-    display: block;
-    margin-right: 0;
-    font-weight: 600
-  }
-}
+
 
 /*-------X--------------END OF RESPONSIVENESS/MEDIA QUERIES FOR FOOTER --------X------------------*/
 
@@ -1382,7 +1397,7 @@ blockquote {
   transform: translate(-50%, -50%);
   pointer-events: none;
   transition: all 200ms ease-out;
-  z-index:9999;
+  z-index: 9999;
 }
 
 .cursor2 {
@@ -1395,7 +1410,7 @@ blockquote {
   transform: translate(-50%, -50%);
   pointer-events: none;
   transition: width .3s, height .3s, opacity .3s;
-  z-index:9999;
+  z-index: 9999;
 }
 
 .hover {
@@ -1404,70 +1419,10 @@ blockquote {
 }
 
 .cursorinnerhover {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   opacity: 0.2;
 
 }
 
 /*---------------------END OF CUSTOMIZED CURSOR--------------------------*/
-
-
-
-
-
-
-/* about page text fade in*/
-.about-me{
-  opacity: 0;
-  transform: translateY(20px);
-  transition: 0.5s all ease-in-out;
-}
-
-.about-appear{
-  opacity: 1;
-  transform: translateY(0px);
-}
-
-
-
-/* color page */
-
-.bg-active{
-  background-color: #fff;
-}
-
-
-
-
-
-
-
-
-
-
-.preloader {
-  align-items: center;
-  background: rgb(0, 0, 0);
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  left: 0;
-  position: fixed;
-  top: 0;
-  opacity: 1;
-  transition:opacity 2s linear;
-  width: 100%;
- z-index: 9999;
-}
-
-
-
-.data{
-  font-size: 45px;
-  color: #fff;
-  text-align: center;
-  margin: 0 auto;
-  letter-spacing: 12px;
-
-}
