@@ -142,13 +142,10 @@ text.reveal(9000);
 const menuIcon = document.querySelector('.hamburger-menu');
 const navbar = document.querySelector('.navbar');
 const menuText = document.querySelector('.menu-on');
+const menuLink = document.querySelector('.nav-link');
 
 menuIcon.addEventListener('click', () => {
 navbar.classList.toggle('change');
 });
-
-
-
-
 
 

@@ -93,6 +93,18 @@ a:hover {
   transition: all 0.3s ease;
 }
 
+.hamburger-menu{
+  width: 35px;
+  height:30px;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 2;
+}
 
 
 
@@ -116,7 +128,7 @@ a:hover {
 
 /*------------START OF MOBILE MENU------------- */
 
-
+@media only screen and (max-width: 700px){
 
   .navbar{
     width: 100%;
@@ -137,18 +149,10 @@ a:hover {
 }
 
 .hamburger-menu{
-    width: 35px;
-    height:30px;
-    position: fixed;
-    top: 50px;
-    right: 50px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    z-index: 2;
-}
 
+    display: flex;
+    
+}
 
 .line{
     width: 100%;
@@ -156,10 +160,6 @@ a:hover {
     background-color: rgb(0, 0, 0);
    transition: all 1.5s;
 }
-
-
-
-
 
 .change .line-1 {
     transform: rotateZ(-405deg) translate(-8px, 6px);
@@ -169,16 +169,13 @@ a:hover {
 opacity: 0;
 }
 
-
 .change .line-3 {
     transform: rotateZ(405deg) translate(-8px, -6px);
 }
 
-
 .nav-list{
     text-align: center;
 }
-
 
 .nav-item{
     list-style: none;
@@ -225,7 +222,7 @@ opacity: 0;
 }
 
 
-
+}
 
 /*-------x----------------End of Navigation for all websites----------------------------x---*/
 
