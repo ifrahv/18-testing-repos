@@ -152,3 +152,7 @@ document.addEventListener('mousedown', function () {
   cursor.classList.add('click');
   navbar.classList.remove('change');
 });
+
+
+
+
