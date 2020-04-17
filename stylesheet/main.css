@@ -656,7 +656,7 @@ a {
 
 .about-me p {
   color: rgb(17, 16, 16);
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 300;
   text-transform: none;
 }
@@ -670,7 +670,7 @@ a {
 
 /*---------------ABOUT ME CV BUTTON -----------------*/
 .cv {
-  border: 1.5px solid rgb(47, 248, 228);
+  border: 1.5px solid rgb(13, 72, 235);
   font-size: 22px;
   font-weight: 300;
   border-radius: 3px;
@@ -684,7 +684,7 @@ a {
 }
 
 .cv:hover {
-  background: rgb(47, 248, 228, 0.2);
+  background: rgba(47, 67, 248, 0.2);
 }
 
 
@@ -1162,10 +1162,11 @@ blockquote {
   text-align: center;
   color: rgb(5, 4, 4);
   padding-top: 160px;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   font-weight: 300;
   font-size: 60px;
   text-transform: uppercase;
+  
 }
 
 .contact-section h2 {
@@ -1173,8 +1174,21 @@ blockquote {
   font-size: 20px;
   color: rgb(13, 72, 235);
   text-transform: none;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
+.contact-message{
+  text-transform: uppercase;
+  background-color:  rgb(13, 72, 235);
+  color: white;
+  font-weight: 700;
+  letter-spacing:1px;
+  padding: 5px 10px 6px;
+  border-radius: 4px;
+  margin-right: 5px;
+  font-size: 1rem;
+}
 
 .border {
   width: 100px;
@@ -1187,26 +1201,25 @@ blockquote {
 
 /*--CONTACT FORM----*/
 .contact-form {
-  max-width: 600px;
-  margin: auto;
+  margin: 0 auto;
   padding: 0 10px;
   overflow: hidden;
-
 }
 
 .contact-form-text {
-  display: block;
-  width: 100%;
+  display:block;
+  width: 60%;
   box-sizing: border-box;
   font-size: 24px;
-
-  margin: 16px 0;
-  border: 0;
-  background: rgba(231, 221, 221, 0.295);
+  border-radius: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+  border: 2px solid black;
+  background:#F5F7FA;
   padding: 20px 40px;
   outline: none;
   color: rgb(22, 22, 22);
-  transition: 0.5s;
 }
 
 
@@ -1216,38 +1229,40 @@ blockquote {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 38%;
+  width: 15%;
   box-sizing: border-box;
-  border: 0;
+  border: 2px solid;
+  border-radius: 0.5rem;
   margin-top: 40px;
-  height: 31px;
+  height: 49px;
   overflow: hidden;
   transition: all .2s ease-in-out;
-  background-color: #04080b;
+  background-color: #fff;
   margin-bottom: 100px;
 
 
 }
 
 .button {
-  padding-top: 6px;
+  padding-top: 5px;
   width: 100%;
   height: 34px;
-  transition: all .2s ease-in-out;
-  color: white;
-  font-size: 18px;
+  transition: all .7s ease-in-out;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
 }
 
 .send-text {
   display: block;
-  margin-top: 6px;
-  font: 300 22px 'Lato', sans-serif;
+  margin-top: 20px;
+  font: 300 1.5rem 'Lato', sans-serif;
   letter-spacing: 3px;
-  color: white;
+  color:black;
+
 }
 
 .button:hover {
-  transform: translate3d(0px, -29px, 0px);
+  transform: translate3d(0px, -49px, 0px);
 }
 
 

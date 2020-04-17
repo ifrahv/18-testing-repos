@@ -119,10 +119,8 @@ function sayHi() {
 function disappear() {
   preloader.style.zIndex = '-1';
 }
-setTimeout(sayHi, 5000); // this function is activated after 9000 milliseconds
+setTimeout(sayHi, 4000); // this function is activated after 9000 milliseconds
 setTimeout(disappear, 6000);
-
-
 
 //text distortion
 
@@ -141,18 +139,16 @@ text.reveal(9000);
 
 const menuIcon = document.querySelector('.hamburger-menu');
 const navbar = document.querySelector('.navbar');
-const menuText = document.querySelector('.menu-on');
 const menuLink = document.querySelector('.nav-link');
-
+//when the hamburger is clicked, menu opens
 menuIcon.addEventListener('click', () => {
   navbar.classList.toggle('change');
 });
-
-document.addEventListener('mousedown', function () {
-  cursor.classList.add('click');
-  navbar.classList.remove('change');
-});
-
-
-
+//when a link is clicked, menu closes
+a.forEach(item => {
+  item.addEventListener('mousedown', () => {
+    cursor.classList.add('click');
+    navbar.classList.remove('change');
+  });
+})
 
