@@ -160,9 +160,59 @@ a.forEach(item => {
 })
 
 
-//animations
+//animations for home page load in
 TweenMax.to(".preloader", 2.2, {
   delay: 3.8,
   top: "-100%",
+  ease: Expo.easeInOut
+});
+
+TweenMax.from(".logo", 2, {
+  delay: 5.2,
+  y: 10,
+  opacity: 0,
+  ease: Expo.easeInOut
+});
+
+TweenMax.from(".text-highlight", 2, {
+  delay: 5.1,
+  y: 60,
+  opacity: 0,
+  ease: Expo.easeInOut
+});
+
+TweenMax.from(".ifrah1", 2, {
+  delay: 5.3,
+  y: 20,
+  opacity: 0,
+  ease: Expo.easeInOut
+});
+
+TweenMax.from(".hometext", 2, {
+  delay: 5.4,
+  y: 60,
+  opacity: 0,
+  ease: Expo.easeInOut
+});
+
+TweenMax.staggerFrom("nav", 2, {
+  delay: 6.8,
+  opacity: 0,
+  x: 60,
+  ease: Expo.easeInOut
+}, 0.2);
+
+
+TweenMax.staggerFrom(".media i", 2, {
+  delay: 6.8,
+  opacity: 0,
+  y: 40,
+  ease: Expo.easeInOut
+}, 0.2);
+
+TweenMax.from(".svg-wrapper", 2, {
+  delay: 6.8,
+  x: 60,
+  opacity: 0,
   ease: Expo.easeInOut
 });
