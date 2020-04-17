@@ -19,6 +19,7 @@
   <script src="https://kit.fontawesome.com/2fb9dd8901.js" crossorigin="anonymous"></script>
   <!--Baffle JS library -->
   <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 
 <body>
@@ -97,6 +98,9 @@
             <p class="text"><a href="cv.html">MORE ABOUT ME</a></p>
           </svg>
         </div>
+        <div class="rotatethis">
+          <h2 id="rotated">stone • fox • swim • tapcheck • wolves </h2>
+    </div>
       </div>
     </section>
     <!-- --x-- END OF BUTTON --x----->
@@ -267,9 +271,9 @@
     <!---------CONTACT FORM INSPIRED BY https://codepen.io/ssbalakumar/pen/uzDIA---------------------->
     <div class="contact-section" id="contact">
       <h1 class="text">03. Let's Work Together!</h1>
-      <h2><em class="contact-message">Have any questions? </em>Feel free to drop a message...</h2>
+      <h2><span class="contact-message">Have any questions?</span>Feel free to drop a message...</h2>
       <div class="border"></div>
-      <form action="http://formspree.io/ifrah.vermeer@gmail.com" method="post">
+      <form action="http://formspree.io/ifrah.vermeer@gmail.com" method="post" class="reveal">
         <!---------------form allows the contact form to actually work---------------->
         <input type="text" name="name" class="contact-form-text" placeholder="Your Name">
         <input type="email" name="email address" class="contact-form-text" placeholder="Your Email">
@@ -316,6 +320,7 @@
 
       <!--Javascript Links-->
       <script type="text/javascript" src="stylesheet/main.js"></script>
+      <script type="text/javascript" src="https://rawgit.com/peterhry/CircleType/master/dist/circletype.min.js"></script>
 </body>
 
 </html>

@@ -42,7 +42,29 @@ a.forEach(item => {
   });
 })
 // END OF CURSOR //
+if (cursor) {
+  window.addEventListener("mousemove", function(event) {
+      var e = event;
+      var t = e.target;
+      var f = follow;
+      var c = cursor;
 
+      if (t.tagName == "A") {
+          c.style.backgroundColor = "transparent";
+
+          f.style.top = t.offsetTop + "px";
+          f.style.left = t.offsetLeft + "px";
+          f.style.width = t.clientWidth + "px";
+          f.style.height = t.clientHeight + "px";
+
+          f.classList.add("on-focus");
+      } else {
+          move(c, e);
+          move(f, e);
+          f.classList.remove("on-focus");
+      }
+  });
+}
 
 // START OF header  //
 window.addEventListener('scroll', function () {
@@ -151,4 +173,6 @@ a.forEach(item => {
     navbar.classList.remove('change');
   });
 })
+
+
 
