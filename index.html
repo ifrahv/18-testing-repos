@@ -6,20 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ifrah Vermeer</title>
-  <link rel="stylesheet" href="font/Rimouski.css">
   <!-- css links-->
   <link rel="stylesheet" href="stylesheet/main.css">
   <!-- Browser icons -->
   <link rel="icon" type="image/png" href="images/icons/96.svg" sizes="96x96">
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Oswald:200,400&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
-  <!--font awesome kit-->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap"rel="stylesheet"/>
+  <!-- font awesome kit-->
   <script src="https://kit.fontawesome.com/2fb9dd8901.js" crossorigin="anonymous"></script>
-  <!--Baffle JS library -->
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <!-- Baffle JS library -->
   <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
-  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <!-- Greensock / TweenMax -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 </head>
 
 <body>
@@ -29,47 +30,62 @@
   </div>
 
 
+    <!-- SOCIAL MEDIA ICONS -->
+    <div class="media">
+      <ul>
+        <li>
+          <a href="https://github.com/ifrahv"><i class="fab fa-github"></i></a>
+        </li>
+        <li>
+          <a href="https://codepen.io/ifrahv"><i class="fab fa-codepen"></i></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/ifrah.vermeer"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/ifrah-vermeer-37498018a/"><i class="fab fa-linkedin"></i></a>
+        </li>
+      </ul>
+    </div>
+
   <!------ MAIN NAVIGATION----code for navigation https://codepen.io/mutedblues/pen/MmPNPG ----->
-
   <header class="header">
-    <!-- site logo -->
-    <a href="#hero1" class="logo">IFRAHV</a>
-    <!--toggle for light and dark mode-->
-
-  
+    <!-- LOGO -->
+    <a href="#hero1" class="logo">IV.</a>
 
     <nav class="navbar">
-          <!--hamburger menu-->
+      <!-- hamburger menu -->
       <div class="hamburger-menu">
-        <div class="line line-1"></div>   
-       <div class="line line-2"></div>
-       <div class="line line-3"></div>
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
       </div>
-    
       <ul class="nav-list">
         <li class="nav-item">
           <a href="#hero1" class="nav-link">
-            <span class="menu__item-name">Home</span>
+            <span class="menu__item-name">Home.</span>
           </a>
         </li>
         <li class="nav-item">
           <a href="#portfolio" class="nav-link">
-            <span class="menu__item-name">Portfolio</span>
+            <span class="menu__item-name">Portfolio.</span>
           </a>
         </li>
         <li class="nav-item">
           <a href="#about" class="nav-link">
-            <span class="menu__item-name">About</span>
+            <span class="menu__item-name">About.</span>
           </a>
         </li>
         <li class="nav-item">
           <a href="#contact" class="nav-link">
-            <span class="menu__item-name">Contact</span>
+            <span class="menu__item-name">Contact.</span>
           </a>
         </li>
       </ul>
     </nav>
-  
+    <!-- social media icons-->
+   
+
 
   </header>
 
@@ -98,9 +114,6 @@
             <p class="text"><a href="cv.html">MORE ABOUT ME</a></p>
           </svg>
         </div>
-        <div class="rotatethis">
-          <h2 id="rotated">stone • fox • swim • tapcheck • wolves </h2>
-    </div>
       </div>
     </section>
     <!-- --x-- END OF BUTTON --x----->
@@ -115,7 +128,7 @@
   <!-- intro text -->
   <div class="container" id="portfolio">
     <section class="portfolio-title">
-      <h1>01. Featured Projects </h1>
+      <h1>01. Featured Projects. </h1>
       <p>A collection of my most recent work can be found here. This portfolio is regularly update with new and improved
         projects,designs and experiments. My most current project is creating and developing <strong
           class=project-name>My portfolio.</strong> I try to make my projects varied and interesting.</p>
@@ -249,11 +262,11 @@
 
     <!----------------------------------ABOUT ME SECTION-------------------------------->
     <section class="about-me" id="about">
-      <h1>02. A LITTLE ABOUT ME</h1>
+      <h1>02. A LITTLE ABOUT ME.</h1>
       <p>Hello, I'm Ifrah and</p>
       <p>I'm a first year student studying software Engineering at
         <a href="https://www.northampton.ac.uk/">
-          The University of Northampton. I enjoy painting and 
+          The University of Northampton. I enjoy painting and
         </a>
         I am hoping to better myself within the industry and is looking for an internship to help me do so. If you would
         like to know more about me. Please feel free to view my CV or contact me 📬.
@@ -288,39 +301,38 @@
         </button>
       </form>
     </div>
-      <!-------------------x--------------END OF  CONTACT FORM-------x------------------------>
+    <!-------------------x--------------END OF  CONTACT FORM-------x------------------------>
 
 
-      <!---------------------------------FOOTER----------https://codepen.io/poojanahelia/pen/pooExPZ------------------------------->
-      <footer class="site-footer">
-        <div class="row">
-          <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">Designed and developed by Ifrah Vermeer &copy; 2020.
-            </p>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <!--SOCIAL MEDIA ICONS INSPIRED BY https://codepen.io/Raghdaal/pen/KKwMmpw-->
-            <ul class="social-icons">
-              <li><a class="twitter" href="https://github.com/ifrahv"><i class="fab fa-github"></i></a></li>
-              <li><a class="facebook" href="https://www.facebook.com/ifrah.vermeer"><i class="fab fa-facebook"></i></a>
-              </li>
-              <li><a class="linkedin" href="https://www.linkedin.com/in/ifrah-vermeer-37498018a/"><i
-                    class="fab fa-linkedin"></i></a></li>
-              <li><a class="codepen" href="https://codepen.io/ifrahv"><i class="fab fa-codepen"></i></a></li>
-            </ul>
-          </div>
+    <!---------------------------------FOOTER----------https://codepen.io/poojanahelia/pen/pooExPZ------------------------------->
+    <footer class="site-footer">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Designed and developed by Ifrah Vermeer &copy; 2020.
+          </p>
         </div>
-      </footer>
-      <!-------------------x--------------END OF  FOOTER-------x------------------------>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <!--SOCIAL MEDIA ICONS INSPIRED BY https://codepen.io/Raghdaal/pen/KKwMmpw-->
+          <ul class="social-icons">
+            <li><a class="twitter" href="https://github.com/ifrahv"><i class="fab fa-github"></i></a></li>
+            <li><a class="facebook" href="https://www.facebook.com/ifrah.vermeer"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li><a class="linkedin" href="https://www.linkedin.com/in/ifrah-vermeer-37498018a/"><i
+                  class="fab fa-linkedin"></i></a></li>
+            <li><a class="codepen" href="https://codepen.io/ifrahv"><i class="fab fa-codepen"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-------------------x--------------END OF  FOOTER-------x------------------------>
 
-  
-      <!--cursor-->
-      <div class="cursor"></div>
-      <div class="cursor2"></div>
 
-      <!--Javascript Links-->
-      <script type="text/javascript" src="stylesheet/main.js"></script>
-      <script type="text/javascript" src="https://rawgit.com/peterhry/CircleType/master/dist/circletype.min.js"></script>
+    <!-- cursor -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <!-- Javascript Links -->
+    <script type="text/javascript" src="stylesheet/main.js"></script>
 </body>
 
 </html>

@@ -129,21 +129,6 @@ function bgChanger() {
 window.addEventListener("scroll", bgChanger);
 
 
-
-
-// page loader //
-
-const preloader = document.querySelector('.preloader'); //selecting the class
-function sayHi() {
-  preloader.style.opacity = '0';
-}
-
-function disappear() {
-  preloader.style.zIndex = '-1';
-}
-setTimeout(sayHi, 4000); // this function is activated after 9000 milliseconds
-setTimeout(disappear, 6000);
-
 //text distortion
 
 const text = baffle(".data");
@@ -175,4 +160,9 @@ a.forEach(item => {
 })
 
 
-
+//animations
+TweenMax.to(".preloader", 2.2, {
+  delay: 3.8,
+  top: "-100%",
+  ease: Expo.easeInOut
+});
