@@ -195,14 +195,6 @@ TweenMax.from(".hometext", 2, {
   ease: Expo.easeInOut
 });
 
-TweenMax.staggerFrom("nav", 2, {
-  delay: 6.8,
-  opacity: 0,
-  x: 60,
-  ease: Expo.easeInOut
-}, 0.2);
-
-
 TweenMax.staggerFrom(".media i", 2, {
   delay: 6.8,
   opacity: 0,
