@@ -18,7 +18,6 @@ body {
   text-decoration: none;
   cursor: none;
   transition: all 0.5s ease;
-
 }
 
 a {
@@ -148,23 +147,19 @@ a {
 .header.sticky {
   background: rgba(255, 255, 255, 0.918);
 }
-
 .header.sticky ul li a {
   color: #000;
 }
-
 .header.sticky .logo:hover {
   color: rgb(15, 0, 226);
 }
-
 .header.sticky li a:hover{
   color: rgb(15, 0, 226);
 }
-
-
 .header.sticky .logo {
   color: rgb(0, 0, 0);
 }
+
 
 
 /*-------Website Logo------*/
@@ -206,6 +201,12 @@ a {
 }
 
 @media only screen and (max-width: 700px) {
+.cursor-main{
+  display: none;
+}
+.header.sticky .line {
+  background-color: rgb(0, 0, 0);
+}
 
   .header li a:hover {
     color: white;
@@ -237,7 +238,7 @@ a {
   .line {
     width: 100%;
     height: 3px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     transition: all 1.5s;
   }
 
@@ -259,7 +260,7 @@ a {
 
   .nav-item {
     list-style: none;
-    margin: 45px;
+    margin: 25px;
   }
 
   .nav-link {
@@ -779,7 +780,8 @@ a {
   background-color: #fff;
   position: relative;
   z-index: 2;
-  cursor: pointer
+  cursor: pointer;
+  list-style-type: none;
 }
 
 
@@ -914,7 +916,7 @@ h4 {
 blockquote {
   margin: 25px 0;
   padding-left: 20px;
-  border-left: 2px solid #E71D36;
+  border-left: 4px solid rgb(4, 0, 255);
   text-transform: none;
 }
 
@@ -1021,12 +1023,21 @@ blockquote {
 }
 
 /* SEND BUTTON */
-.send_message_button,
-.special_button {
+.send_message_button{
   margin-top: 25px;
   display: block;
-  background: #E71D36;
+  border: black 3px solid;
   width: 230px;
+  height: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.send_message_button2{
+  margin-top: 25px;
+  display: block;
+  width: 230px;
+  background-color: #000;
   height: 50px;
   position: relative;
   z-index: 1;
@@ -1046,15 +1057,34 @@ blockquote {
   padding: 19.5px 0 0;
   top: -4px;
   bottom: 8px;
-
 }
 
-.send_message_button:hover,
-.special_button:hover {
-  background: rgb(37, 201, 184);
+.content2 {
+  text-align: center;
+  color: #ffffff;
+  width: 230px;
+  height: 50px;
+  display: block;
+  position: relative;
+  letter-spacing: 2px;
+  z-index: 2;
+  font: 17px;
+  margin: 0;
+  padding: 19.5px 0 0;
+  top: -4px;
+  bottom: 8px;
 }
 
 
+
+.send_message_button:hover{
+  border: rgb(3, 238, 255) 3px solid;
+  transition: 0.4s ease-in-out;
+}
+.content:hover {
+  color:rgb(3, 238, 255);
+  transition: 0.4s ease-in-out;
+}
 
 /* DESCRIPTION ABOUT ME SECTION */
 
@@ -1499,13 +1529,6 @@ blockquote {
 
 
 /*-------X--------------END OF RESPONSIVENESS/MEDIA QUERIES FOR FOOTER --------X------------------*/
-
-
-
-
-
-
-
 
 
 

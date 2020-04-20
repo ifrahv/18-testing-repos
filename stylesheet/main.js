@@ -73,7 +73,6 @@ window.addEventListener('scroll', function () {
 });
 
 
-
 // START OF PORTFOLIO TEXT FADE IN //
 window.onload = function () {
   const EFFECT = document.querySelector(".portfolio-title");
@@ -160,6 +159,8 @@ a.forEach(item => {
 })
 
 
+
+
 //animations for home page load in
 TweenMax.to(".preloader", 2.2, {
   delay: 3.8,
@@ -208,3 +209,8 @@ TweenMax.from(".svg-wrapper", 2, {
   opacity: 0,
   ease: Expo.easeInOut
 });
+
+
+
+
+
