@@ -201,6 +201,9 @@ a {
 }
 
 @media only screen and (max-width: 700px) {
+  .media{
+    display: none;
+  }
 .cursor-main{
   display: none;
 }
@@ -472,7 +475,6 @@ a {
     letter-spacing: 4px;
     stroke: rgb(1, 91, 209);
     position: relative;
-    border: #000 solid 4px;
     padding: 20px 30px;
     border-radius: 20px;
     text-align: center; 
@@ -1215,9 +1217,6 @@ blockquote {
 
 
 @media screen and (max-width: 569px) {
-  #contact {
-    height: 1200px;
-  }
 
   .section-header {
     font-size: 50px;
