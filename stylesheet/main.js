@@ -45,8 +45,6 @@ a.forEach(item => {
 // end of customized cursor (inspired by https://tympanus.net/codrops/2019/01/31/custom-cursor-effects/) //
 
 
-
-
 // Header colour change (inspired by https://codepen.io/codeandfly/pen/xbQVOR) //
 
 window.addEventListener('scroll', function () { 
@@ -112,7 +110,7 @@ function bgChanger() {
 window.addEventListener("scroll", bgChanger);
 
 
-//text distortion
+//preloader text distortion
 const text = baffle(".data");
 text.set({
   character: '/░█ ▓/█▒█ ░▒<░░ █░█ █░▓░▒ ▓███ ▓>░ ▓▒▒/ █▓░▒',
@@ -120,6 +118,23 @@ text.set({
 });
 text.start();
 text.reveal(9000);
+
+
+//about page text distortion
+const distort = document.querySelector('.about-me');
+
+let b = baffle('.distort',{
+  characters: 'abcdefghijklmnopqrstuvwxyz',
+  speed:100
+});
+
+distort.addEventListener('mouseover', () => {
+  b.reveal(1000);
+});
+distort.addEventListener('mouseleve', () => {
+  b.stop();
+});
+
 
 
 
@@ -139,6 +154,7 @@ a.forEach(item => {
     navbar.classList.remove('change');
   });
 })
+
 
 
 
