@@ -1,11 +1,11 @@
-// START OF CURSOR //
+// customized cursor (inspired by https://tympanus.net/codrops/2019/01/31/custom-cursor-effects/) //
 
-//cursor variables 
+// cursor variables 
 const cursor = document.querySelector('.cursor');
 const cursorinner = document.querySelector('.cursor2');
-const a = document.querySelectorAll('a'); //queries all links within the document 
+const a = document.querySelectorAll('a'); //queries all links within the document.
 
-//these two functions allows the circles to follow the cursor
+// these two functions allows the circles to follow the cursor.
 document.addEventListener('mousemove', function (e) {
   let x = e.clientX;
   let y = e.clientY;
@@ -20,19 +20,19 @@ document.addEventListener('mousemove', function (e) {
   cursorinner.style.top = y + 'px';
 });
 
-//when the cursor is clicked the hover is added
+// when the cursor is clicked the hover is added.
 document.addEventListener('mousedown', function () {
   cursor.classList.add('click');
   cursorinner.classList.add('cursorinnerhover')
 });
 
-//when the cursor is clicked the hover is removed
+// when the cursor is clicked the hover is removed.
 document.addEventListener('mouseup', function () {
   cursor.classList.remove('click')
   cursorinner.classList.remove('cursorinnerhover')
 });
 
-//this checks to change the color of hover
+// this checks the links to see if it needs to change the color of hover.
 a.forEach(item => {
   item.addEventListener('mouseover', () => {
     cursor.classList.add('hover');
@@ -41,39 +41,24 @@ a.forEach(item => {
     cursor.classList.remove('hover');
   });
 })
-// END OF CURSOR //
-if (cursor) {
-  window.addEventListener("mousemove", function(event) {
-      var e = event;
-      var t = e.target;
-      var f = follow;
-      var c = cursor;
 
-      if (t.tagName == "A") {
-          c.style.backgroundColor = "transparent";
+// end of customized cursor (inspired by https://tympanus.net/codrops/2019/01/31/custom-cursor-effects/) //
 
-          f.style.top = t.offsetTop + "px";
-          f.style.left = t.offsetLeft + "px";
-          f.style.width = t.clientWidth + "px";
-          f.style.height = t.clientHeight + "px";
 
-          f.classList.add("on-focus");
-      } else {
-          move(c, e);
-          move(f, e);
-          f.classList.remove("on-focus");
-      }
-  });
-}
 
-// START OF header  //
-window.addEventListener('scroll', function () {
+
+// Header colour change (inspired by https://codepen.io/codeandfly/pen/xbQVOR) //
+
+window.addEventListener('scroll', function () { 
   let header = document.querySelector('header');
   header.classList.toggle('sticky', window.scrollY > 400);
 });
 
+// End of Header colour change (inspired by https://codepen.io/codeandfly/pen/xbQVOR) //
 
-// START OF PORTFOLIO TEXT FADE IN //
+
+
+// portfolio text fade in effect 
 window.onload = function () {
   const EFFECT = document.querySelector(".portfolio-title");
 
@@ -82,7 +67,7 @@ window.onload = function () {
   function scrollEffect() {
     if (window.scrollY > 500) {
       EFFECT.style.opacity = '1';
-      EFFECT.style.transform = 'translateY(-20px)';
+      EFFECT.style.transform = 'translateY(-50px)';
       EFFECT.style.transition = '1s ease-in-out';
 
     } else {
@@ -95,16 +80,17 @@ window.onload = function () {
 
 
 
-// START OF about me fade in //
-
+// about me fade in effect 
 function scrollAppear() {
   var introText = document.querySelector('.about-me');
   var introPosition = introText.getBoundingClientRect().top;
-  var screenPosition = window.innerHeight / 3;
+  var screenPosition = window.innerHeight / 2.5;
 
 
   if (introPosition < screenPosition) {
     introText.classList.add('about-appear');
+    introText.style.transform = 'translateY(-50px)';
+    introText.style.transition = '1s ease-in-out';
   } else {
     introText.classList.remove('about-appear');
   }
@@ -114,9 +100,7 @@ window.addEventListener('scroll', scrollAppear);
 
 
 
-// background overlay  and scroll to top//
-
-
+// background overlay 
 function bgChanger() {
   if (this.scrollY > this.innerHeight / 2) {
     document.body.classList.add('bg-active');
@@ -129,7 +113,6 @@ window.addEventListener("scroll", bgChanger);
 
 
 //text distortion
-
 const text = baffle(".data");
 text.set({
   character: '/░█ ▓/█▒█ ░▒<░░ █░█ █░▓░▒ ▓███ ▓>░ ▓▒▒/ █▓░▒',
@@ -141,8 +124,7 @@ text.reveal(9000);
 
 
 
-// Mobile navigation //
-
+// Mobile navigation (inspired by https://codepen.io/riogrande/pen/gbXxdx) //
 const menuIcon = document.querySelector('.hamburger-menu');
 const navbar = document.querySelector('.navbar');
 const menuLink = document.querySelector('.nav-link');
@@ -157,6 +139,7 @@ a.forEach(item => {
     navbar.classList.remove('change');
   });
 })
+
 
 
 
@@ -190,21 +173,21 @@ TweenMax.from(".ifrah1", 2, {
 });
 
 TweenMax.from(".hometext", 2, {
-  delay: 5.4,
+  delay: 5.3,
   y: 60,
   opacity: 0,
   ease: Expo.easeInOut
 });
 
 TweenMax.staggerFrom(".media i", 2, {
-  delay: 6.8,
+  delay: 5.9,
   opacity: 0,
   y: 40,
   ease: Expo.easeInOut
 }, 0.2);
 
 TweenMax.from(".svg-wrapper", 2, {
-  delay: 6.8,
+  delay: 5.8,
   x: 60,
   opacity: 0,
   ease: Expo.easeInOut
