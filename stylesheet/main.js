@@ -113,7 +113,7 @@ window.addEventListener("scroll", bgChanger);
 //preloader text distortion
 const text = baffle(".data");
 text.set({
-  character: '/░█ ▓/█▒█ ░▒<░░ █░█ █░▓░▒ ▓███ ▓>░ ▓▒▒/ █▓░▒',
+  character: '>/░ >▓>▓< █▒░>▓ ░▒▓ >▒<▓▒ /▓▓█ ▓█▓ ▓▓>▒ ░▓▒░',
   speed: 100,
 });
 text.start();
@@ -124,14 +124,14 @@ text.reveal(9000);
 const distort = document.querySelector('.about-me');
 
 let b = baffle('.distort',{
-  characters: 'abcdefghijklmnopqrstuvwxyz',
+  characters: '>/░ >▓>▓< █▒░>▓ ░▒▓ >▒<▓▒ /▓▓█ ▓█▓ ▓▓>▒ ░▓▒░',
   speed:100
 });
 
 distort.addEventListener('mouseover', () => {
   b.reveal(1000);
 });
-distort.addEventListener('mouseleve', () => {
+distort.addEventListener('mouseleave', () => {
   b.stop();
 });
 

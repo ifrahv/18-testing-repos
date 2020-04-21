@@ -519,9 +519,9 @@ a {
 
 .portfolio-title p {
   color: rgb(17, 16, 16);
-  font-size: 22px;
+  font-size: 30px;
   font-weight: 300;
-  width: 60%;
+  width: 80%;
 }
 
 .portfolio-title {
@@ -531,6 +531,7 @@ a {
 
 .project-name {
   color: rgb(29, 76, 231);
+  font-weight: 300;
 }
 
 .project-name:hover {
@@ -731,9 +732,13 @@ a {
 
 .about-me p {
   color: rgb(17, 16, 16);
-  font-size: 26px;
+  font-size: 35px;
   font-weight: 300;
   text-transform: none;
+}
+
+.distort{
+  text-decoration: underline;
 }
 
 .about-me {
