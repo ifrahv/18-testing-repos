@@ -504,7 +504,7 @@ a {
 /*----------------------START OF PORTFOLIO PAGE ------------------------*/
 /*--PAGE LAYOUT----*/
 .container {
-  padding-top: 90px;
+  padding-top: 150px;
   max-width: 1335px;
   margin: 0 auto;
   overflow: auto;
@@ -738,13 +738,13 @@ a {
 }
 
 .distort{
-  text-decoration: underline;
+  border-bottom: 2px solid #1d62f0;
 }
 
 .about-me {
   margin: 0 auto;
   width: 60%;
-  padding-top: 300px;
+  padding-top: 200px;
   padding-bottom: 200px;
 }
 

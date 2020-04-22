@@ -135,6 +135,9 @@ distort.addEventListener('mouseleave', () => {
   b.stop();
 });
 
+//image text hover
+
+
 
 
 
