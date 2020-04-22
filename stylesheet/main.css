@@ -204,9 +204,13 @@ a {
   .media{
     display: none;
   }
-.cursor-main{
+
+
+
+.cursor{
   display: none;
 }
+
 .header.sticky .line {
   background-color: rgb(0, 0, 0);
 }
