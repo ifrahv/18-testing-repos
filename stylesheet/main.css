@@ -281,7 +281,7 @@ a {
     overflow: hidden;
   }
 
-
+  /*- menu hover effect (inspired by https://tympanus.net/Development/MenuHoverEffects/dustu.html)-*/
   .menu__item-name::before,
   .menu__item-name::after {
     content: '';
@@ -820,100 +820,52 @@ a {
 
 
 
-/*---------------CV LAYOUT-----------------*/
+/*---------------CV LAYOUT (inspired by https://codepen.io/jlalovi/pen/NPeBqZ) -----------------*/
 .clear {
   clear: both;
 }
 
-.purple {
-  color: #208C81;
-}
-
 .block {
-  margin: 25px 30px;
+  margin: 30px 30px;
   padding-bottom: 10px;
 }
 
 .block h1 {
-  margin-left: -5px;
-  font-weight: 200;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 20px 0 0 -5px;
 }
 
 .block p {
-  text-transform: none;
-  font-size: 20px;
-}
-
-.block .p-pad {
-  text-transform: none;
   font-size: 20px;
   padding-bottom: 20px;
 }
 
-.last.block {
-  margin-bottom: 110px;
-}
-
-.horizontal_list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.horizontal_list li {
-  float: left;
-}
-
-.horizontal_list li:before {
-  content: none;
-}
-
-.horizontal_list li {
-  padding-left: 0;
-  text-indent: 0;
-}
-
-.horizontal_line {
-  margin: 34px 0 0 30px;
-  height: 26px;
-  position: relative;
-}
-
 .line_left {
-  border-top: 1px solid #2EC4B6;
+  border-top: 1px solid #0a50e6;
   width: 100%;
   margin-top: 13px;
 }
-
+.edul1 li{
+  list-style-type: none;
+}
 
 
 /* TYPOGRAPHY FOR CV PAGE*/
 
 
-h1 {
-  font-size: 48px;
-  font-weight: 300;
-  margin: 20px 0;
-}
+
 
 h2 {
   font-size: 28px;
   margin: 32px 0 24px;
 }
 
-h3 {
-  font-size: 24px;
-}
-
-h4 {
-  font-size: 18px;
-  font-weight: 400;
-}
 
 blockquote {
   margin: 25px 0;
   padding-left: 20px;
-  border-left: 4px solid rgb(4, 0, 255);
+  border-left: 6px solid rgb(4, 0, 255);
   text-transform: none;
 }
 
@@ -945,9 +897,6 @@ blockquote {
   float: left;
 }
 
-.header_menu_container a {
-  font-family: 'Lato', Helvetica, sans-serif;
-}
 
 #left_col {
   width: 260px;
@@ -960,66 +909,38 @@ blockquote {
   float: left;
 }
 
-#footer {
-  width: 960px;
-  height: 60px;
-  border-top: 1px solid #403F44;
-  display: inline-block;
-}
 
 /* LOGO FOR CV */
 
 .logotype_name {
   text-transform: uppercase;
-  font-size: 32px;
-  margin: 43px 0 0;
+  font-size: 45px;
+  font-weight: 300;
+  margin-top: 20px;
 }
 
-.logotype_occupation {
-  text-transform: uppercase;
-  margin-top: 5px;
-  color: #23e79c;
-  font-size: 14px;
-  letter-spacing: 2px;
-  padding-left: 7px;
+.logo_surname{
+  color: #0a50e6;
 }
 
-
-
-
-/* IMAGE */
-
-.profile_frame {
-  width: 230px;
-  height: 260px;
-  background: black;
-  border: 1px solid #403F44;
-  margin-top: 30px;
-}
 
 /* CONTACT DETAILS */
-.hello_content,
+
 .contact_details_content {
-  margin-top: 25px;
-}
-
-.hello_content {
-  width: 230px;
-}
-
-.contact_details_content h2+p.purple {
-  margin-top: 10px;
+  margin-top: 520px;
 }
 
 .contact_details_content p {
   margin: 0;
+  font-size: 16px;
+  letter-spacing: 2px;
 }
 
 .contact_details_content p.purple {
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
-/* SEND BUTTON */
+/* two buttons */
 .send_message_button{
   margin-top: 25px;
   display: block;
@@ -1072,8 +993,6 @@ blockquote {
   bottom: 8px;
 }
 
-
-
 .send_message_button:hover{
   border: rgb(3, 238, 255) 3px solid;
   transition: 0.4s ease-in-out;
@@ -1090,23 +1009,13 @@ blockquote {
 }
 
 .profile_quote p {
-  font-size: 17px;
-  width: 455px;
-}
-
-.profile_quote .entypo-quote {
-  color: #000000;
-  font-size: 80px;
-  font-style: normal;
-  position: relative;
-  top: -20px;
-  right: 70px;
-  cursor: default;
+  font-size: 20px;
+  width: 80%;
+  letter-spacing: 1px;
 }
 
 
 /* INTERESTS SECTION */
-
 .interests-items {
   box-sizing: border-box;
   padding: 0 15px;
@@ -1116,22 +1025,12 @@ blockquote {
   justify-content: space-between;
 }
 
-.interests-items div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-
 .interests-items div:hover i {
-  transform: scale(1.2);
+  transform: scale(0.9);
 }
 
 .interests-items div:hover span {
-  color: rgb(47, 248, 228);
+  color: rgb(47, 84, 248);
   transition-duration: 0.3s;
 }
 
@@ -1140,7 +1039,7 @@ blockquote {
   width: 60px;
   height: 60px;
   line-height: 60px;
-  color: #2EC4B6;
+  color: #0a50e6;
   transition-duration: 0.3s;
 }
 
@@ -1150,52 +1049,48 @@ blockquote {
 
 .interest-font {
   color: rgb(0, 0, 0);
-  font-family: 'entypo', sans-serif;
   letter-spacing: 2px;
-  padding: 5px;
+  padding: 12px;
 }
-
-
-
 
 
 
 /* SKILLS SECTION INSPIRED BY https://codepen.io/pankajparashar/pen/qDKGo*/
-.progress {
-  margin: 20px auto;
-  padding: 0;
-  width: 90%;
-  height: 30px;
-  overflow: hidden;
-  background: #616161;
-  border-radius: 6px;
+.flex {
+  display: flex;
+  width: 100%;
 }
 
-.bar {
+.flex.column {
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+.jcsb {
+  justify-content: space-between;
+}
+
+progress {
   position: relative;
-  float: left;
-  min-width: 1%;
-  height: 100%;
-  background: rgb(47, 248, 228);
+  margin: 2em 1em;
 }
-
-.percent {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  padding-left: 25px;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  font-size: 12px;
-  color: rgb(7, 0, 0);
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  max-width: 360px;
+  height: 1px;
 }
-
-.skill-name {
-
-  font-size: 18px;
-  font-family: 'Lato', Helvetica, sans-serif;
-  color: rgb(2, 2, 2);
-
+progress::-webkit-progress-bar {
+  background-color: #000300;
+  border-radius: 1em;
+}
+progress::-webkit-progress-value {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  background-color: rgb(25, 0, 255);
+  border-radius: 1em;
+  height: 5px;
 }
 
 
