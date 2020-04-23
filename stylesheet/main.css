@@ -830,10 +830,17 @@ a {
   padding-bottom: 10px;
 }
 
+/* TYPOGRAPHY FOR CV PAGE*/
 .block h1 {
   font-weight: 300;
   text-transform: uppercase;
+  letter-spacing: 2px;
   margin: 20px 0 0 -5px;
+}
+.block h2 {
+  letter-spacing: 2px;
+  font-size: 28px;
+  margin: 32px 0 24px;
 }
 
 .block p {
@@ -845,20 +852,6 @@ a {
   border-top: 1px solid #0a50e6;
   width: 100%;
   margin-top: 13px;
-}
-.edul1 li{
-  list-style-type: none;
-}
-
-
-/* TYPOGRAPHY FOR CV PAGE*/
-
-
-
-
-h2 {
-  font-size: 28px;
-  margin: 32px 0 24px;
 }
 
 
@@ -927,7 +920,7 @@ blockquote {
 /* CONTACT DETAILS */
 
 .contact_details_content {
-  margin-top: 520px;
+ padding-top: 90px;
 }
 
 .contact_details_content p {
@@ -938,6 +931,7 @@ blockquote {
 
 .contact_details_content p.purple {
   margin-top: 30px;
+  color: #0a50e6;
 }
 
 /* two buttons */
@@ -998,8 +992,25 @@ blockquote {
   transition: 0.4s ease-in-out;
 }
 .content:hover {
-  color:rgb(3, 238, 255);
+  color:rgb(31, 107, 112);
   transition: 0.4s ease-in-out;
+}
+
+/* EDUCATION SECTION */
+.education{
+  margin-top: 50px;
+  padding-top: 40px;
+}
+
+.edul1 li{
+  list-style-type: none;
+  color: #0a50e6;
+}
+
+.ed-font{
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 /* DESCRIPTION ABOUT ME SECTION */
@@ -1055,18 +1066,18 @@ blockquote {
 
 
 
-/* SKILLS SECTION INSPIRED BY https://codepen.io/pankajparashar/pen/qDKGo*/
+/* SKILLS SECTION (INSPIRED BY https://codepen.io/andrejsharapov/pen/gqRePX?editors=1100)*/
 .flex {
   display: flex;
-  width: 100%;
+  justify-content: space-between;
 }
 
 .flex.column {
+  width: 100%;
   flex-flow: column wrap;
-  justify-content: space-between;
 }
-.jcsb {
-  justify-content: space-between;
+.flex span{
+margin-right: 8rem;
 }
 
 progress {
@@ -1077,23 +1088,21 @@ progress[value] {
   -webkit-appearance: none;
   appearance: none;
   width: 100%;
-  max-width: 360px;
-  height: 1px;
+  max-width: 500px;
+  height: 2px;
+  transition: ease-in-out 2s;
 }
 progress::-webkit-progress-bar {
   background-color: #000300;
   border-radius: 1em;
 }
 progress::-webkit-progress-value {
-  position: absolute;
+  position: relative;
   top: -2px;
-  left: 0;
   background-color: rgb(25, 0, 255);
   border-radius: 1em;
-  height: 5px;
+  height: 6px;
 }
-
-
 
 
 /*------X---------END OF START OF CV PAGE ----------X-------*/
@@ -1330,23 +1339,14 @@ progress::-webkit-progress-value {
 }
 
 .site-footer .social-icons a {
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  margin-left: 6px;
+  margin-left: 20px;
   margin-right: 0;
-  border-radius: 100%;
-  background-color: #eaebec
 }
-
 
 /* COPYRIGHT TEXT */
 .copyright-text {
-  margin: 0;
-
-
+  margin: 3px 10px;
 }
-
 /*--------------END OF WEBSITE FOOTER-------------*/
 
 /*---------------------START OF RESPONSIVENESS/MEDIA QUERIES FOR FOOTER --------------------------*/
@@ -1378,10 +1378,8 @@ progress::-webkit-progress-value {
 }
 
 .social-icons a {
-  background-color: rgb(187, 36, 36);
   font-size: 30px;
   display: inline-block;
-
   text-align: center;
   margin-right: 8px;
   border-radius: 100%;
@@ -1393,24 +1391,7 @@ progress::-webkit-progress-value {
 .social-icons a:active,
 .social-icons a:focus,
 .social-icons a:hover {
-  color: #fff;
-  background-color: #29aafe
-}
-
-.social-icons a.facebook:hover {
-  background-color: #2e53a3
-}
-
-.social-icons a.twitter:hover {
-  background-color: #00f5a3
-}
-
-.social-icons a.linkedin:hover {
-  background-color: #0478ad
-}
-
-.social-icons a.codepen:hover {
-  background-color: #131313
+  color: rgb(40, 230, 255);
 }
 
 
