@@ -111,7 +111,7 @@ a {
   top: 0px;
   position: fixed;
   transition: 1s;
- 
+
 
 }
 
@@ -147,15 +147,19 @@ a {
 .header.sticky {
   background: rgba(255, 255, 255, 0.918);
 }
+
 .header.sticky ul li a {
   color: #000;
 }
+
 .header.sticky .logo:hover {
   color: rgb(15, 0, 226);
 }
-.header.sticky li a:hover{
+
+.header.sticky li a:hover {
   color: rgb(15, 0, 226);
 }
+
 .header.sticky .logo {
   color: rgb(0, 0, 0);
 }
@@ -201,19 +205,19 @@ a {
 }
 
 @media only screen and (max-width: 700px) {
-  .media{
+  .media {
     display: none;
   }
 
 
 
-.cursor{
-  display: none;
-}
+  .cursor {
+    display: none;
+  }
 
-.header.sticky .line {
-  background-color: rgb(0, 0, 0);
-}
+  .header.sticky .line {
+    background-color: rgb(0, 0, 0);
+  }
 
   .header li a:hover {
     color: white;
@@ -390,7 +394,7 @@ a {
 }
 
 /*-- hello text --*/
-.ifrah1{
+.ifrah1 {
   font-size: 100px;
   font-weight: 900;
   letter-spacing: 8px;
@@ -450,28 +454,30 @@ a {
 
 @media only screen and (max-width: 375px) {
 
-  .header .logo{
+  .header .logo {
     font-size: 2rem;
   }
 
-  .ifrah1{
+  .ifrah1 {
     font-size: 40px;
     font-weight: 900;
     letter-spacing: 2px;
     text-align: center;
   }
+
   .hero-content {
     font-size: 28px;
     line-height: 4rem;
     letter-spacing: 2px;
     text-align: center;
   }
-  .shape{
+
+  .shape {
     display: none;
   }
-  
+
   .text {
-    margin-top:60px;
+    margin-top: 60px;
     margin-left: -70px;
     color: rgb(1, 91, 209);
     font-size: 22px;
@@ -481,21 +487,26 @@ a {
     position: relative;
     padding: 20px 30px;
     border-radius: 20px;
-    text-align: center; 
+    text-align: center;
     justify-content: center;
   }
+
   .hero {
     padding-top: 150px;
   }
+
   .text-highlight {
     width: 250px;
     height: 14px;
     top: 420px;
     margin: 1px;
     position: absolute;
-    background:blue
+    background: blue
   }
 
+  .cursor-main {
+    display: none;
+  }
 }
 
 /*-----------X----------END OF RESPONSIVENESS/MEDIA QUERIES FOR HOME PAGE--------X------------------*/
@@ -677,7 +688,7 @@ a {
     width: 70%;
     padding: 25% 0 0 12%;
   }
-  
+
 
 }
 
@@ -728,7 +739,7 @@ a {
   text-transform: none;
 }
 
-.distort{
+.distort {
   border-bottom: 2px solid #1d62f0;
 }
 
@@ -759,15 +770,16 @@ a {
 }
 
 
-@media only screen and (max-width:400px){
+@media only screen and (max-width:400px) {
   .about-me h1 {
     text-align: left;
     font-size: 35px;
   }
-.about-me p{
-  width: 80%;
-  font-size: 20px;
-}
+
+  .about-me p {
+    width: 80%;
+    font-size: 20px;
+  }
 }
 
 
@@ -837,6 +849,7 @@ a {
   letter-spacing: 2px;
   margin: 20px 0 0 -5px;
 }
+
 .block h2 {
   letter-spacing: 2px;
   font-size: 28px;
@@ -912,7 +925,7 @@ blockquote {
   margin-top: 20px;
 }
 
-.logo_surname{
+.logo_surname {
   color: #0a50e6;
 }
 
@@ -920,7 +933,7 @@ blockquote {
 /* CONTACT DETAILS */
 
 .contact_details_content {
- padding-top: 90px;
+  padding-top: 90px;
 }
 
 .contact_details_content p {
@@ -935,7 +948,7 @@ blockquote {
 }
 
 /* two buttons */
-.send_message_button{
+.send_message_button {
   margin-top: 25px;
   display: block;
   border: black 3px solid;
@@ -945,7 +958,7 @@ blockquote {
   z-index: 1;
 }
 
-.send_message_button2{
+.send_message_button2 {
   margin-top: 25px;
   display: block;
   width: 230px;
@@ -987,27 +1000,28 @@ blockquote {
   bottom: 8px;
 }
 
-.send_message_button:hover{
+.send_message_button:hover {
   border: rgb(3, 238, 255) 3px solid;
   transition: 0.4s ease-in-out;
 }
+
 .content:hover {
-  color:rgb(31, 107, 112);
+  color: rgb(31, 107, 112);
   transition: 0.4s ease-in-out;
 }
 
 /* EDUCATION SECTION */
-.education{
+.education {
   margin-top: 50px;
   padding-top: 40px;
 }
 
-.edul1 li{
+.edul1 li {
   list-style-type: none;
   color: #0a50e6;
 }
 
-.ed-font{
+.ed-font {
   margin-top: 30px;
   font-weight: 500;
   font-size: 20px;
@@ -1076,14 +1090,16 @@ blockquote {
   width: 100%;
   flex-flow: column wrap;
 }
-.flex span{
-margin-right: 8rem;
+
+.flex span {
+  margin-right: 8rem;
 }
 
 progress {
   position: relative;
   margin: 2em 1em;
 }
+
 progress[value] {
   -webkit-appearance: none;
   appearance: none;
@@ -1092,10 +1108,12 @@ progress[value] {
   height: 2px;
   transition: ease-in-out 2s;
 }
+
 progress::-webkit-progress-bar {
   background-color: #000300;
   border-radius: 1em;
 }
+
 progress::-webkit-progress-value {
   position: relative;
   top: -2px;
@@ -1205,12 +1223,12 @@ progress::-webkit-progress-value {
   letter-spacing: 1px;
 }
 
-.contact-message{
+.contact-message {
   text-transform: uppercase;
-  background-color:  rgb(13, 72, 235);
+  background-color: rgb(13, 72, 235);
   color: white;
   font-weight: 600;
-  letter-spacing:2px;
+  letter-spacing: 2px;
   padding: 5px 10px 5px;
   border-radius: 4px;
   margin-right: 5px;
@@ -1234,7 +1252,7 @@ progress::-webkit-progress-value {
 }
 
 .contact-form-text {
-  display:block;
+  display: block;
   width: 60%;
   box-sizing: border-box;
   font-size: 24px;
@@ -1243,7 +1261,7 @@ progress::-webkit-progress-value {
   margin-right: auto;
   margin-bottom: 16px;
   border: 2px solid black;
-  background:#F5F7FA;
+  background: #F5F7FA;
   padding: 20px 40px;
   outline: none;
   color: rgb(22, 22, 22);
@@ -1283,7 +1301,7 @@ progress::-webkit-progress-value {
   margin-top: 20px;
   font: 300 1.5rem 'Lato', sans-serif;
   letter-spacing: 3px;
-  color:rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
 .button:hover {
@@ -1299,6 +1317,7 @@ progress::-webkit-progress-value {
     padding: 10px 10px 0 0;
     letter-spacing: 2px;
   }
+
   .contact-section {
     padding-top: 90px;
   }
@@ -1347,6 +1366,7 @@ progress::-webkit-progress-value {
 .copyright-text {
   margin: 3px 10px;
 }
+
 /*--------------END OF WEBSITE FOOTER-------------*/
 
 /*---------------------START OF RESPONSIVENESS/MEDIA QUERIES FOR FOOTER --------------------------*/
@@ -1397,7 +1417,3 @@ progress::-webkit-progress-value {
 
 
 /*-------X--------------END OF RESPONSIVENESS/MEDIA QUERIES FOR FOOTER --------X------------------*/
-
-
-
-

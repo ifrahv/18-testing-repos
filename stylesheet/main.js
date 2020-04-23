@@ -47,7 +47,7 @@ a.forEach(item => {
 
 // Header colour change (inspired by https://codepen.io/codeandfly/pen/xbQVOR) //
 
-window.addEventListener('scroll', function () { 
+window.addEventListener('scroll', function () {
   let header = document.querySelector('header');
   header.classList.toggle('sticky', window.scrollY > 400);
 });
@@ -123,9 +123,9 @@ text.reveal(9000);
 //about page text distortion
 const distort = document.querySelector('.about-me');
 
-let b = baffle('.distort',{
+let b = baffle('.distort', {
   characters: '>/░ >▓>▓< █▒░>▓ ░▒▓ >▒<▓▒ /▓▓█ ▓█▓ ▓▓>▒ ░▓▒░',
-  speed:100
+  speed: 100
 });
 
 distort.addEventListener('mouseover', () => {
@@ -211,8 +211,3 @@ TweenMax.from(".svg-wrapper", 2, {
   opacity: 0,
   ease: Expo.easeInOut
 });
-
-
-
-
-
