@@ -1011,9 +1011,8 @@ blockquote {
 }
 
 /* EDUCATION SECTION */
-.education {
-  margin-top: 50px;
-  padding-top: 40px;
+.one{
+margin-top: 70px;
 }
 
 .edul1 li {
@@ -1281,32 +1280,27 @@ progress::-webkit-progress-value {
   margin-top: 40px;
   height: 49px;
   overflow: hidden;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   margin-bottom: 100px;
-
-
 }
 
-.button {
-  padding-top: 5px;
-  width: 100%;
-  height: 34px;
-  color: rgb(0, 0, 0);
-  font-size: 1.5rem;
-  transition: linear .7s;
-}
+
 
 .send-text {
   display: block;
-  margin-top: 20px;
   font: 300 1.5rem 'Lato', sans-serif;
   letter-spacing: 3px;
   color: rgb(0, 0, 0);
 }
 
-.button:hover {
-  transform: translate3d(0px, -49px, 0px);
+.send-text:hover {
+  color: #0a50e6;
+  transition: 0.4s ease-in-out;
 }
+.send-button:hover {
+  border: #0a50e6 3px solid;
+  transition: 0.4s ease-in-out;
+  }
 
 
 /*---------------------RESPONSIVENESS/MEDIA QUERIES FOR CONTACT PAGE--------------------------*/

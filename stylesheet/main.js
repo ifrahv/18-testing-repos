@@ -6,13 +6,14 @@ const cursorinner = document.querySelector('.cursor2');
 const a = document.querySelectorAll('a'); //queries all links within the document.
 
 // these two functions allows the circles to follow the cursor.
+//this is for the outside mouse
 document.addEventListener('mousemove', function (e) {
   let x = e.clientX;
   let y = e.clientY;
   cursor.style.left = x + "px";
   cursor.style.top = y + "px";
 });
-
+//this is for the inner pink mouse
 document.addEventListener('mousemove', function (e) {
   let x = e.clientX;
   let y = e.clientY;
@@ -146,6 +147,7 @@ distort.addEventListener('mouseleave', () => {
 const menuIcon = document.querySelector('.hamburger-menu');
 const navbar = document.querySelector('.navbar');
 const menuLink = document.querySelector('.nav-link');
+
 //when the hamburger is clicked, menu opens
 menuIcon.addEventListener('click', () => {
   navbar.classList.toggle('change');

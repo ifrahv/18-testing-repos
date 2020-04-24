@@ -16,10 +16,6 @@
   <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet" />
   <!-- font awesome kit-->
   <script src="https://kit.fontawesome.com/2fb9dd8901.js" crossorigin="anonymous"></script>
-  <!-- Baffle JS library -->
-  <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
-  <!-- Greensock / TweenMax -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 </head>
 
 <body>
@@ -77,18 +73,14 @@
     <section class="hero" id="hero1">
       <div class="hero-content">
         <h1 class="ifrah1"> Hello, </h1>
-
-        <p class="hometext">My name is Ifrah Vermeer.
-
+        <p class="hometext">My name is Ifrah Vermeer.</p>
           <!--- HIGHLIGHT INSPIRED BY https://codepen.io/pugson/pen/EwmKJp --->
-        </p>
         <div class="text-highlight"></div>
-
         <!-- BUTTON inspired by https://codepen.io/lookingforsome/pen/oLJkoO-->
         <div class="svg-wrapper">
           <svg height="48" width="323" xmlns="http://www.w3.org/2000/svg">
             <rect class="shape" height="48" width="323" />
-            <p class="text"><a href="cv.html">MORE ABOUT ME</a></p>
+            <div class="text"><a href="cv.html">MORE ABOUT ME</a></div>
           </svg>
         </div>
       </div>
@@ -126,7 +118,7 @@
       <h1>01. Featured Projects. </h1>
       <p>A collection of my most recent work can be found here. This portfolio is regularly update with new and improved
         projects,designs and experiments. My most current project is creating and developing <strong
-          class=project-name>My portfolio.</strong> I try to make my projects varied and interesting.</p>
+          class=project-name>momentum clone project.</strong> I try to make my projects varied and interesting.</p>
     </section>
 
 
@@ -143,7 +135,7 @@
             <div class="grid-item-content">
               <span class="item-title">Quote Generator</span>
               <span class="item-category">A quote generator that allows you to post quotes to your social media
-                pages.</span>
+                pages. This will be created in class and uploaded soon.</span>
               <ul>
                 <li class="links1"><a href="https://ifrahv.github.io/quote-generator/">View Project</a></li>
                 <li class="links1"><a href="https://github.com/ifrahv/quote-generator">View Code</a></li>
@@ -165,8 +157,10 @@
             <div class="grid-item-content">
               <span class="item-title">Weather app</span>
               <span class="item-category">A weather app that tells you the weather of your exact location.</span>
+              <ul>
               <li class="links1"><a href="https://ifrahv.github.io/a-weather-app/">View Project</a></li>
               <li class="links1"><a href="https://github.com/ifrahv/a-weather-app">View Code</a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -184,8 +178,10 @@
             <div class="grid-item-content">
               <span class="item-title">To do list</span>
               <span class="item-category">This was created using HTML, CSS and vanilla JavaScript.</span>
+              <ul>
               <li class="links1"><a href="https://ifrahv.github.io/To-do-list/">View Project</a></li>
               <li class="links1"><a href="https://github.com/ifrahv/To-do-list">View Code</a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -197,14 +193,16 @@
         <div class="grid-item-wrapper">
           <div class="grid-item-container">
             <div class="grid-image-top">
-              <img class="port-image" src="images/cal.png" alt="image of a calculator">
+              <img class="port-image" src="images/cal.png" alt="image of momentum project">
               <span class="centered project-image-bg "></span>
             </div>
             <div class="grid-item-content">
-              <span class="item-title">FUTURE PROJECT IDEA</span>
-              <span class="item-category">creating a basic calculator app</span>
+              <span class="item-title">Momentum clone</span>
+              <span class="item-category">This is my attempt at creating the popular chrome extension Momentum.</span>
+              <ul>
               <li class="links1">View Project</li>
               <li class="links1">View Code</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -223,8 +221,10 @@
             <div class="grid-item-content">
               <span class="item-title">FUTURE PROJECT IDEA</span>
               <span class="item-category">developing a website that compares movies.</span>
+              <ul>
               <li class="links1">View Project</li>
               <li class="links1">View Code</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -243,18 +243,22 @@
             <div class="grid-item-content">
               <span class="item-title">FUTURE PROJECT IDEA</span>
               <span class="item-category">More ideas coming soon !</span>
+              <ul>
               <li class="links1">View Project</li>
               <li class="links1">View Code </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
     <!-------------------x--------------END OF  PORTFOLIO-------x------------------------>
 
 
     <!----------------------------------ABOUT ME SECTION-------------------------------->
+
     <section class="about-me" id="about">
       <h1>02. A LITTLE ABOUT ME.</h1>
       <p>Hello, I'm Ifrah and I'm a first year student studying software engineering at
@@ -289,9 +293,7 @@
 
         <!---------SEND BUTTON INSPIRED BY https://codepen.io/bobbykorec/pen/qOGbyr---------------------->
         <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-          <div class="button">
-            <i class="fas fa-paper-plane"></i><span class="send-text">SEND</span>
-          </div>
+           <span class="send-text">SEND</span>
         </button>
       </form>
     </div>
@@ -327,6 +329,11 @@
       <div class="cursor2"></div>
     </div>
     <!-- Javascript Links -->
+    <!-- Baffle JS library -->
+    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+    <!-- Greensock / TweenMax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <!-- js stylesheet -->
     <script type="text/javascript" src="stylesheet/main.js"></script>
 </body>
 
