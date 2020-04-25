@@ -1,7 +1,3 @@
-Code validation
-
-¨
-The index.html file contains all four of my pages as I created a one-page portfolio. The main errors that I had were caused by missing a closing div or missing the ul from my nav.
 
 # Interactive JS Portfolio Site
 
