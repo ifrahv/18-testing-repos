@@ -50,7 +50,7 @@ a.forEach(item => {
 
 window.addEventListener('scroll', function () {
   let header = document.querySelector('header');
-  header.classList.toggle('sticky', window.scrollY > 400);
+  header.classList.toggle('sticky', window.scrollY > 400);// when the user scrolls past 400 the colour changes of the header.
 });
 
 // End of Header colour change (inspired by https://codepen.io/codeandfly/pen/xbQVOR) //
