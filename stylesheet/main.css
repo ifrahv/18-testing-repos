@@ -210,6 +210,9 @@ a {
   }
 
 
+  .header.sticky li a:hover {
+    color: rgb(255, 255, 255);
+  }
 
   .cursor {
     display: none;

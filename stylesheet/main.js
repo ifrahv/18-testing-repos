@@ -24,13 +24,13 @@ document.addEventListener('mousemove', function (e) {
 // when the cursor is clicked the hover is added.
 document.addEventListener('mousedown', function () {
   cursor.classList.add('click');
-  cursorinner.classList.add('cursorinnerhover')
+  cursorinner.classList.add('cursorinnerhover');
 });
 
 // when the cursor is clicked the hover is removed.
 document.addEventListener('mouseup', function () {
-  cursor.classList.remove('click')
-  cursorinner.classList.remove('cursorinnerhover')
+  cursor.classList.remove('click');
+  cursorinner.classList.remove('cursorinnerhover');
 });
 
 // this checks the links to see if it needs to change the color of hover.
@@ -41,7 +41,7 @@ a.forEach(item => {
   item.addEventListener('mouseleave', () => {
     cursor.classList.remove('hover');
   });
-})
+});
 
 // end of customized cursor (inspired by https://tympanus.net/codrops/2019/01/31/custom-cursor-effects/) //
 
@@ -75,7 +75,7 @@ window.onload = function () {
     }
   }
 
-}
+};
 
 
 
@@ -158,7 +158,7 @@ a.forEach(item => {
     cursor.classList.add('click');
     navbar.classList.remove('change');
   });
-})
+});
 
 
 
