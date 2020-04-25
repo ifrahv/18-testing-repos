@@ -1,7 +1,3 @@
-Code validation
-
-¨
-The index.html file contains all four of my pages as I created a one-page portfolio. The main errors that I had were caused by missing a closing div or missing the ul from my nav.
 
 # Interactive JS Portfolio Site
 
@@ -9,7 +5,7 @@ This project is my attempt of completing AS2 of Web Development.
 
 ## Code validation
 
-I created a one page portoflio which means that all four of my pages are in one index.html. I also have a cv.html for my resume.
+I created a one page portfolio which means that all four of my pages are in one index.html. I also have a cv.html for my resume.
 ### Index.html
 #### Errors
 <img width="1357" alt="Screenshot 2020-04-24 at 15 05 49" src="https://user-images.githubusercontent.com/56298423/80284442-6747a400-8716-11ea-9ded-c4269c27ca7d.png">
@@ -59,4 +55,4 @@ W3C does not have a JavaScript validator. I used another source which states tha
 
 I prefer to work on my assignment in small sections daily. This helped to see changes more significantly. This was because it is easier for me to see the differences something as small as changing the font size can make if i look at it the next day. COmpared to staring at my screen for 5 hours. If i tried working on the assignment for a extensive time in a single day i felt demotivated to make my work better which is why i try to make little changes each day.
 
-
+<img width="1386" alt="Screenshot 2020-04-25 at 18 06 38" src="https://user-images.githubusercontent.com/56298423/80285841-96164800-871f-11ea-82b4-9260be0645c9.png">
