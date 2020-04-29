@@ -279,9 +279,8 @@ a {
 
   .nav-link {
     text-decoration: none;
-    font-size: 33px;
+    font:300 33px;
     color: white;
-    font-weight: 300;
     letter-spacing: 4px;
     text-transform: uppercase;
     position: relative;
@@ -361,9 +360,8 @@ a {
 }
 
 .text {
-  font-weight: 300;
   color: rgb(1, 91, 209);
-  font-size: 22px;
+  font:300 22px;
   line-height: 3px;
   letter-spacing: 8px;
   top: -48px;
@@ -398,16 +396,14 @@ a {
 
 /*-- hello text --*/
 .ifrah1 {
-  font-size: 100px;
-  font-weight: 900;
+  font:900 100px;
   letter-spacing: 8px;
 }
 
 
 .hero-content {
   margin: 0px 60px;
-  font-size: 95px;
-  font-weight: 600;
+  font-size:600 95px;
   color: #ffffff;
   line-height: 8rem;
   letter-spacing: 4px;
@@ -462,8 +458,7 @@ a {
   }
 
   .ifrah1 {
-    font-size: 40px;
-    font-weight: 900;
+    font:900 40px;
     letter-spacing: 2px;
     text-align: center;
   }
@@ -537,8 +532,7 @@ a {
 
 .portfolio-title p {
   color: rgb(17, 16, 16);
-  font-size: 30px;
-  font-weight: 300;
+  font:300 30px;
   width: 80%;
 }
 
@@ -634,9 +628,8 @@ a {
 }
 
 .item-title {
-  font-size: 24px;
+  font:700 24px;
   line-height: 26px;
-  font-weight: 700;
   letter-spacing: 2px;
   margin-bottom: 18px;
   display: block;
@@ -645,8 +638,7 @@ a {
 .item-category {
   display: block;
   margin-bottom: 55px;
-  font-size: 20px;
-  font-weight: 300;
+  font:300 20px;
 }
 
 .links1 {
@@ -737,8 +729,7 @@ a {
 
 .about-me p {
   color: rgb(17, 16, 16);
-  font-size: 35px;
-  font-weight: 300;
+  font:300 35px;
   text-transform: none;
 }
 
@@ -756,8 +747,7 @@ a {
 /*---------------ABOUT ME CV BUTTON -----------------*/
 .cv {
   border: 1.5px solid rgb(13, 72, 235);
-  font-size: 27px;
-  font-weight: 300;
+  font:300 27px;
   border-radius: 3px;
   padding: 0.75rem 1rem;
 }
@@ -923,8 +913,7 @@ blockquote {
 
 .logotype_name {
   text-transform: uppercase;
-  font-size: 45px;
-  font-weight: 300;
+  font:300 45px;
   margin-top: 20px;
 }
 
@@ -1025,8 +1014,7 @@ margin-top: 70px;
 
 .ed-font {
   margin-top: 30px;
-  font-weight: 500;
-  font-size: 20px;
+  font:500 20px;
 }
 
 /* DESCRIPTION ABOUT ME SECTION */
@@ -1212,16 +1200,14 @@ progress::-webkit-progress-value {
   color: rgb(5, 4, 4);
   padding-top: 160px;
   letter-spacing: 3px;
-  font-weight: 300;
-  font-size: 60px;
+  font:300 60px;
 }
 
 .contact-section h2 {
   text-align: center;
-  font-size: 20px;
+  font:400 20px;
   color: rgb(13, 72, 235);
   text-transform: none;
-  font-weight: 400;
   letter-spacing: 1px;
 }
 
@@ -1229,12 +1215,11 @@ progress::-webkit-progress-value {
   text-transform: uppercase;
   background-color: rgb(13, 72, 235);
   color: white;
-  font-weight: 600;
   letter-spacing: 2px;
   padding: 5px 10px 5px;
   border-radius: 4px;
   margin-right: 5px;
-  font-size: 1rem;
+  font:600 1rem;
 }
 
 .border {
