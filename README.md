@@ -56,3 +56,12 @@ W3C does not have a JavaScript validator. I used another source which states tha
 I prefer to work on my assignment in small sections daily. This helps me to see smaller changes more significantly. This was because it is easier for me to see the differences something as small as changing the font size can make if i look at it the next day. Compared to staring at my screen for 5 hours. If i tried working on the assignment for a extensive time in a single day i felt demotivated to make my work better which is why i try to make little changes each day.
 
 <img width="1386" alt="Screenshot 2020-04-25 at 18 06 38" src="https://user-images.githubusercontent.com/56298423/80285841-96164800-871f-11ea-82b4-9260be0645c9.png">
+
+---
+
+## inspriration
+
+https://yasio.pl/
+https://onepagelove.com/inspiration/portfolio
+
+
