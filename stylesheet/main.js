@@ -8,13 +8,15 @@ const a = document.querySelectorAll('a'); //queries all links within the documen
 // these two functions allows the circles to follow the cursor.
 //this is for the outside mouse
 document.addEventListener('mousemove', function (e) {
+  // add listener to track the current mouse position
   let x = e.clientX;
   let y = e.clientY;
   cursor.style.left = x + "px";
   cursor.style.top = y + "px";
-});
+}); 
 //this is for the inner pink mouse
 document.addEventListener('mousemove', function (e) {
+  // add listener to track the current mouse position
   let x = e.clientX;
   let y = e.clientY;
   cursorinner.style.left = x + 'px';
@@ -58,13 +60,11 @@ window.addEventListener('scroll', function () {
 
 
 // portfolio text fade in effect 
-window.onload = function () {
+
   const EFFECT = document.querySelector(".portfolio-title");
 
-  window.addEventListener('scroll', scrollEffect);
-
   function scrollEffect() {
-    if (window.scrollY > 500) {
+    if (window.scrollY > 500) { // distance in pixels.
       EFFECT.style.opacity = '1';
       EFFECT.style.transform = 'translateY(-50px)';
       EFFECT.style.transition = '1s ease-in-out';
@@ -75,19 +75,20 @@ window.onload = function () {
     }
   }
 
-};
+  window.addEventListener('scroll', scrollEffect);//calls function every time you scroll.
+
 
 
 
 // about me fade in effect 
 function scrollAppear() {
   var introText = document.querySelector('.about-me');
-  var introPosition = introText.getBoundingClientRect().top;
-  var screenPosition = window.innerHeight / 2.5;
+  var introPosition = introText.getBoundingClientRect().top; // this gets the distance the text is relative to the window
+  var screenPosition = window.innerHeight / 2.5; // inner.height due to different screen sizes. how big the screen is
 
 
-  if (introPosition < screenPosition) {
-    introText.classList.add('about-appear');
+  if (introPosition < screenPosition) { 
+    introText.classList.add('about-appear'); //access the class
     introText.style.transform = 'translateY(-50px)';
     introText.style.transition = '1s ease-in-out';
   } else {
@@ -95,7 +96,7 @@ function scrollAppear() {
   }
 }
 
-window.addEventListener('scroll', scrollAppear);
+window.addEventListener('scroll', scrollAppear);//calls function every time you scroll.
 
 
 
@@ -125,21 +126,16 @@ text.reveal(9000);
 const distort = document.querySelector('.about-me');
 
 let b = baffle('.distort', {
-  characters: '>/░ >▓>▓< █▒░>▓ ░▒▓ >▒<▓▒ /▓▓█ ▓█▓ ▓▓>▒ ░▓▒░',
+  characters: '>/░ >▓>▓< █▒░>▓ ░▒▓ >▒<▓▒ /▓▓█ ▓█▓ ▓▓>▒ ░▓▒░',//swap text with characters
   speed: 100
 });
 
 distort.addEventListener('mouseover', () => {
-  b.reveal(1000);
+  b.reveal(1000); // reveal text over 1000ms
 });
 distort.addEventListener('mouseleave', () => {
-  b.stop();
+  b.stop(); // stops text distortion
 });
-
-//image text hover
-
-
-
 
 
 
