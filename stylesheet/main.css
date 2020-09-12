@@ -5,8 +5,9 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; 
 
+  height: 100%;
 }
 
 body {
@@ -234,8 +235,6 @@ a {
     top: 0;
     right: -100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     transition: right .8s cubic-bezier(1, 0, 0, 1);
     overflow: hidden;
     z-index: 2;

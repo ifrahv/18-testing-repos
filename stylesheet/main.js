@@ -151,7 +151,6 @@ menuIcon.addEventListener('click', () => {
 //when a link is clicked, menu closes
 a.forEach(item => {
   item.addEventListener('mousedown', () => {
-    cursor.classList.add('click');
     navbar.classList.remove('change');
   });
 });
