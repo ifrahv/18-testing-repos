@@ -10,9 +10,10 @@ This project is my attempt of completing AS2 of Web Development.
 
 ## LightHouse Report
 
-I prefer to work on my assignment in small sections daily. This helps me to see smaller changes more significantly. This was because it is easier for me to see the differences something as small as changing the font size can make if i look at it the next day. Compared to staring at my screen for 5 hours. If i tried working on the assignment for a extensive time in a single day i felt demotivated to make my work better which is why i try to make little changes each day.
+This is my lighthouse report. I will continue to work on the performance and accessibility of the site.
 
-<img width="1386" alt="Screenshot 200-04-25 at 18 06 38" src="https://user-images.githubusercontent.com/56298423/80285841-96164800-871f-11ea-82b4-9260be0645c9.png">
+<img width="1440" alt="Screenshot 2020-09-13 at 12 50 44" src="https://user-images.githubusercontent.com/56298423/93017356-e2bfca00-f5bf-11ea-895f-4b148754f14b.png">
+
 
 ---
 
