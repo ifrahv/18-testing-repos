@@ -580,8 +580,9 @@ a {
   -webkit-box-sizing: initial;
   -moz-box-sizing: initial;
   box-sizing: initial;
-  background: #d3d3d336;
+  background: #fff;
   margin: 0;
+  box-shadow:  5px 5px 10px #e6e6e6,  -5px -5px 10px #ffffff;
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -650,7 +651,9 @@ a {
 }
 
 .grid-item:hover .grid-item-wrapper {
-  padding: 2% 2%;
+  padding: 5% 3%;
+  box-shadow:  5px 5px 29px #c2c2c2, 
+             -5px -5px 29px #ffffff;
   margin: -2% -2%;
 }
 
