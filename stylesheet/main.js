@@ -163,7 +163,7 @@ a.forEach(item => {
 //animations for home page load in
 TweenMax.to(".preloader", 2.2, {
   delay: 3.8,
-  top: "-100%",
+  top: "-200%",
   ease: Expo.easeInOut
 });
 
