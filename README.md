@@ -1,7 +1,7 @@
 
 # Interactive JS Portfolio Site
 
-This project is my attempt of completing AS2 of Web Development. 
+This is my portfolio which showcases any projects that i complete
 
 
 
