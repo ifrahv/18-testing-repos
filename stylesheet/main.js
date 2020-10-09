@@ -174,12 +174,6 @@ TweenMax.from(".logo", 2, {
   ease: Expo.easeInOut
 });
 
-TweenMax.from(".text-highlight", 2, {
-  delay: 5.1,
-  y: 60,
-  opacity: 0,
-  ease: Expo.easeInOut
-});
 
 TweenMax.from(".ifrah1", 2, {
   delay: 5.3,
